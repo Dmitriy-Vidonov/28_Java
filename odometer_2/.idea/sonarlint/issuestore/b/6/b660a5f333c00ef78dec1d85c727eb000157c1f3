@@ -1,0 +1,8 @@
+
+0
+java:S1220""Move this file to a named package.
+N	java:S106
+"9Replace this use of System.out or System.err by a logger.(ãüğ£
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ùşô¸øÿÿÿÿ8ÇòÉ±0
+C
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8…úÉ±0
