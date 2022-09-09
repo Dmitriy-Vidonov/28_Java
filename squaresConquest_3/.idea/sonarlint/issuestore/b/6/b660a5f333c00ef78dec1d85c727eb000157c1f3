@@ -1,0 +1,25 @@
+
+k	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÃö±ýÿÿÿÿ
+k	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íŸžŠýÿÿÿÿ
+k	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ý•ß—ýÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(é¼Ã´ùÿÿÿÿ
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+R
+java:S1854"<Remove this useless assignment to local variable "cellFill".(ÞÍàÿ
+R
+java:S1854"<Remove this useless assignment to local variable "cellFill".(è§•Ñ
+Q
+java:S1172";Remove these unused method parameters "counter", "mapCols".(÷˜ðð
+H
+java:S1481"-Remove this unused "cellFill" local variable.(»ñ…¡ùÿÿÿÿ
+h
+java:S3776("RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(Çµí‘
+P
+java:S18547"5Remove this useless assignment to local variable "L".(Ý•ß—ýÿÿÿÿ
+A
+java:S14817"&Remove this unused "L" local variable.(Ý•ß—ýÿÿÿÿ
+M	java:S106L"9Replace this use of System.out or System.err by a logger.(»ÛÝ
+N	java:S106W"9Replace this use of System.out or System.err by a logger.(ž¡í–
+S	java:S106p"9Replace this use of System.out or System.err by a logger.(Â³˜•ÿÿÿÿÿ

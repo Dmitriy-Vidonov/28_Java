@@ -9,10 +9,31 @@ public class Test {
             System.out.println();
         }
     }
-    //метод "захват", он же conquer
-    public static int conquer(int x, int y) {
+    /*метод "захват", он же conquer
+     - на вход получает координаты ячейки, с которой мы вызываем эту функцию (x, y) (upd - получает массив)
+     - на вход получает ignoreFlag (ignoreF)
+     - на вход получает значение countFull (counter)
+     - на вход получает размеры полигона (map) (mapRows, mapCols)  */ //может в нее массив передать попробовать?
+    public static int conquer(int x, int y, int counter, int ignoreF, int mapRows, int mapCols) {
         int result = 0;
-        
+        int cellFill = 0;
+        // - определяет, что будет помещать в ячейки (число, противоположное ignoreFlag).
+        // Если ignoreFlag == 1, то ставим в ячейки 2 и наоборот. Переменная — cellFill
+        if(ignoreF == 1) cellFill = 2;
+        else cellFill = 1;
+        int[] conquerArr = new int[8]; //массив для хранения координат ячеек для заполнения
+        if(x+1 <= mapRows-1) { //если координата x ячейки не выступает за пределы нижнего уровня map
+            conquerArr[0] = x+1;
+            conquerArr[1] = y;
+        } else{
+            conquerArr[0] = -1;
+            conquerArr[1] = -1;
+        }
+        if(x-1 >= mapRows) { //проверить что не выходим за верхний диапазон
+            //заглушка
+        }
+
+
         return result;
     }
 
