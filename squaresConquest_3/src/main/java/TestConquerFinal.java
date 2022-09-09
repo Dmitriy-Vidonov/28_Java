@@ -10,7 +10,7 @@ public class TestConquerFinal {
         int mapSquare = N*M;
 
         // создать массив NxM и заполнить его нулями
-        int[][] map = new int[7][13];
+        int[][] map = new int[N][M];
         for (int n = 0; n < N; n++) { //внешний цикл по строкам
             for (int m = 0; m < M; m++) { //внутренний цикл по строкам
                 map[n][m] = 0;
@@ -43,7 +43,7 @@ public class TestConquerFinal {
                     if(map[i][j] == ignFlag) { //какое число в ячейке игнорируем
 
                         //вызов метода, передающего координаты для заполнения
-                        int arr[] = Test3.getConquerAlt(map, i, j, ignFlag, map.length, map[0].length);
+                        int[] arr = Methods.getConquerAlt(map, i, j, ignFlag, map.length, map[0].length);
                         countFull += arr[9]; //обновляем число заполненных ячеек, которое получаем после работы метода
 
                         //надо по полученным координатам заполнить ячейки
@@ -56,7 +56,7 @@ public class TestConquerFinal {
                     }
                 }
             }
-            Test3.arrayDisplay(map); //тестовый вывод массива
+            Methods.arrayDisplay(map); //тестовый вывод массива
             System.out.println("дней прошло: " + days + ". Из " + mapSquare + " ячеек заполнено " + countFull);
             System.out.println(); //просто отступ
             /********************MAIN LOOP END******************/

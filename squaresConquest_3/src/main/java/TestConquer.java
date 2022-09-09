@@ -28,7 +28,7 @@ public class TestConquer {
             }
         }
         days++; //добавляем первый день после высадки  = 1
-        //Test3.arrayDisplay(map); //тестовый вывод массива
+        //Methods.arrayDisplay(map); //тестовый вывод массива
 
         System.out.println("map.length = " + map.length); //строки, координата X (=7)
         System.out.println("map[0].length = " + map[0].length); //столбцы, координата Y (=13)
@@ -45,7 +45,7 @@ public class TestConquer {
                     System.out.println("x = " + i + ", y = " + j); //координаты ячеек с 1
 
                     //вызов ф-ции, передающей координаты
-                    int arr[] = Test3.getConquer(i, j, countFull, ignFlag, map.length, map[0].length);
+                    int arr[] = Methods.getConquerAlt(map, i, j, ignFlag, map.length, map[0].length);
                     countFull += arr[9];
 
                     //вывод координат ячеек для заполнения + шаблон заполнения и игнор
@@ -64,7 +64,7 @@ public class TestConquer {
                 }
             }
         }
-        Test3.arrayDisplay(map); //тестовый вывод массива
+        Methods.arrayDisplay(map); //тестовый вывод массива
         System.out.println("дней прошло: " + days + ". Из " + mapSquare + " ячеек заполнено " + countFull);
         System.out.println(); //просто отступ
         //**************************************/
@@ -80,7 +80,7 @@ public class TestConquer {
                   //  System.out.println("x = " + i + ", y = " + j); //координаты ячеек с 1
 
                     //вызов ф-ции, передающей координаты
-                    int arr[] = Test3.getConquer(i, j, countFull, ignFlag, map.length, map[0].length);
+                    int arr[] = Methods.getConquerAlt(map, i, j, ignFlag, map.length, map[0].length);
                     countFull += arr[9];
                     /*вывод координат ячеек для заполнения + шаблон заполнения и игнор
                     for(int k=0; k<arr.length; k++) {
@@ -98,7 +98,7 @@ public class TestConquer {
                 }
             }
         }
-        Test3.arrayDisplay(map); //тестовый вывод массива
+        Methods.arrayDisplay(map); //тестовый вывод массива
         System.out.println("дней прошло: " + days + ". Из " + mapSquare + " ячеек заполнено " + countFull);
         System.out.println(); //просто отступ
 
@@ -115,7 +115,7 @@ public class TestConquer {
                    // System.out.println("x = " + i + ", y = " + j); //координаты ячеек с 1
 
                     //вызов ф-ции, передающей координаты
-                    int arr[] = Test3.getConquer(i, j, countFull, ignFlag, map.length, map[0].length);
+                    int arr[] = Methods.getConquerAlt(map, i, j, ignFlag, map.length, map[0].length);
                     countFull += arr[9];
                     /*вывод координат ячеек для заполнения + шаблон заполнения и игнор
                     for(int k=0; k<arr.length; k++) {
@@ -133,7 +133,7 @@ public class TestConquer {
                 }
             }
         }
-        Test3.arrayDisplay(map); //тестовый вывод массива
+        Methods.arrayDisplay(map); //тестовый вывод массива
         System.out.println("дней прошло: " + days + ". Из " + mapSquare + " ячеек заполнено " + countFull);
         System.out.println(); //просто отступ
     }
