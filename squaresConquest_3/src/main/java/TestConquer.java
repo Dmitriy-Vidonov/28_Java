@@ -52,5 +52,66 @@ public class TestConquer {
             }
         }
         Test3.arrayDisplay(map); //тестовый вывод массива
+        System.out.println(); //просто отступ
+
+        //**************************************/
+
+        //сымитируем для верности ручками еще один цикл, но уже по двойкам
+        for(int i=0; i<map.length; i++) { //цикл по строкам
+            for(int j=0; j<map[0].length; j++) { //цикл по столбцам
+                if(map[i][j] == 2) {
+                  //  System.out.println("x = " + i + ", y = " + j); //координаты ячеек с 1
+
+                    //вызов ф-ции, передающей координаты
+                    int arr[] = Test3.getConquer(i, j, 0, 2, map.length, map[0].length);
+
+                    /*вывод координат ячеек для заполнения + шаблон заполнения и игнор
+                    for(int k=0; k<arr.length; k++) {
+                        System.out.print(arr[k] + " ");
+                    }
+                    System.out.println();*/
+
+                    //надо по полученным координатам заполнить ячейки
+                    //заполнение ячеек массива значениями по координатам из conquer
+                    for(int k=0; k<arr.length-2; k+=2) {
+                        if(arr[k] != -1) {
+                            map[arr[k]][arr[k+1]] = arr[8];
+                        }
+                    }
+                }
+            }
+        }
+        Test3.arrayDisplay(map); //тестовый вывод массива
+        System.out.println(); //просто отступ
+
+        //**************************************/
+
+        //сымитируем для верности ручками еще один цикл, снова по единичкам
+        for(int i=0; i<map.length; i++) { //цикл по строкам
+            for(int j=0; j<map[0].length; j++) { //цикл по столбцам
+                if(map[i][j] == 1) {
+                   // System.out.println("x = " + i + ", y = " + j); //координаты ячеек с 1
+
+                    //вызов ф-ции, передающей координаты
+                    int arr[] = Test3.getConquer(i, j, 0, 1, map.length, map[0].length);
+
+                    /*вывод координат ячеек для заполнения + шаблон заполнения и игнор
+                    for(int k=0; k<arr.length; k++) {
+                        System.out.print(arr[k] + " ");
+                    }
+                    System.out.println();*/
+
+                    //надо по полученным координатам заполнить ячейки
+                    //заполнение ячеек массива значениями по координатам из conquer
+                    for(int k=0; k<arr.length-2; k+=2) {
+                        if(arr[k] != -1) {
+                            map[arr[k]][arr[k+1]] = arr[8];
+                        }
+                    }
+                }
+            }
+        }
+        Test3.arrayDisplay(map); //тестовый вывод массива
+        System.out.println(); //просто отступ
     }
 }
