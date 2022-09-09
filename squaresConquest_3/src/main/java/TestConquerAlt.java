@@ -1,4 +1,4 @@
-public class TestConquer {
+public class TestConquerAlt {
     public static void main(String[] args) {
         int days = 0; //число дней
         int countFull = 0; //переменная для подсчета заполненных ячеек
@@ -45,7 +45,7 @@ public class TestConquer {
                     System.out.println("x = " + i + ", y = " + j); //координаты ячеек с 1
 
                     //вызов ф-ции, передающей координаты
-                    int arr[] = Test3.getConquer(i, j, countFull, ignFlag, map.length, map[0].length);
+                    int arr[] = Test3.getConquerAlt(map, i, j, ignFlag, map.length, map[0].length);
                     countFull += arr[9];
 
                     //вывод координат ячеек для заполнения + шаблон заполнения и игнор
@@ -77,18 +77,10 @@ public class TestConquer {
         for(int i=0; i<map.length; i++) { //цикл по строкам
             for(int j=0; j<map[0].length; j++) { //цикл по столбцам
                 if(map[i][j] == ignFlag) {
-                  //  System.out.println("x = " + i + ", y = " + j); //координаты ячеек с 1
 
                     //вызов ф-ции, передающей координаты
-                    int arr[] = Test3.getConquer(i, j, countFull, ignFlag, map.length, map[0].length);
+                    int arr[] = Test3.getConquerAlt(map, i, j, ignFlag, map.length, map[0].length);
                     countFull += arr[9];
-                    /*вывод координат ячеек для заполнения + шаблон заполнения и игнор
-                    for(int k=0; k<arr.length; k++) {
-                        System.out.print(arr[k] + " ");
-                    }
-                    System.out.println();*/
-
-                    //надо по полученным координатам заполнить ячейки
                     //заполнение ячеек массива значениями по координатам из conquer
                     for(int k=0; k<arr.length-2; k+=2) {
                         if(arr[k] != -1) {
@@ -112,18 +104,10 @@ public class TestConquer {
         for(int i=0; i<map.length; i++) { //цикл по строкам
             for(int j=0; j<map[0].length; j++) { //цикл по столбцам
                 if(map[i][j] == ignFlag) {
-                   // System.out.println("x = " + i + ", y = " + j); //координаты ячеек с 1
 
                     //вызов ф-ции, передающей координаты
-                    int arr[] = Test3.getConquer(i, j, countFull, ignFlag, map.length, map[0].length);
+                    int arr[] = Test3.getConquerAlt(map, i, j, ignFlag, map.length, map[0].length);
                     countFull += arr[9];
-                    /*вывод координат ячеек для заполнения + шаблон заполнения и игнор
-                    for(int k=0; k<arr.length; k++) {
-                        System.out.print(arr[k] + " ");
-                    }
-                    System.out.println();*/
-
-                    //надо по полученным координатам заполнить ячейки
                     //заполнение ячеек массива значениями по координатам из conquer
                     for(int k=0; k<arr.length-2; k+=2) {
                         if(arr[k] != -1) {
