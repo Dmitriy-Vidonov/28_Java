@@ -18,9 +18,7 @@ public class TestConquerFinal {
         }
 
         int L = 3;
-        int[] batallion = {2, 3, 3, 8, 4, 12}; //length = 6
-        //int[] batallion = {0, 0, 0, 0, 0, 0, 0, 0, 0, 1};
-        //int[] batallion = {0,0};
+        int[] batallion = {2, 3, 3, 8, 4, 12};
 
         //проставляем начальные точки высадки
         int count = 0; //0
@@ -31,46 +29,50 @@ public class TestConquerFinal {
             }
             count+=2;
         }
-
-        Methods.arrayDisplay(map);
-        System.out.println();
-
         days++; //добавляем первый день после высадки  = 1
 
-        while (countFull < mapSquare) {
-            /********************MAIN LOOP BEGIN******************/
-            // - начать проходку map (двумерного массива) поэлементно
-            days++; //  - к days прибавить 1
+        Methods.arrayDisplay(map); //тестовый вывод массива
+        System.out.println(); //просто отступ  ********/
 
-            if(days % 2 == 0) {
-                ignFlag = 1;    //на четное число дней ignoreFlag = 1
-            } else ignFlag = 2; //на нечетное число дней ignoreFlag = 2. Это по сути содержимое ячейки для игнора
+        if(countFull < mapSquare) {
+            //цикл while
+            while (countFull < mapSquare) {
+                /********************MAIN LOOP BEGIN******************/
+                // - начать проходку map (двумерного массива) поэлементно
+                days++; //  - к days прибавить 1
 
-            for(int i=0; i<map.length; i++) { //цикл по строкам
-                for(int j=0; j<map[0].length; j++) { //цикл по столбцам
-                    if(map[i][j] == ignFlag) { //какое число в ячейке игнорируем
+                if(days % 2 == 0) {
+                    ignFlag = 1;    //на четное число дней ignoreFlag = 1
+                } else ignFlag = 2; //на нечетное число дней ignoreFlag = 2. Это по сути содержимое ячейки для игнора
 
-                        //вызов метода, передающего координаты для заполнения
-                        int[] arr = Methods.getConquerAlt(map, i, j, ignFlag, map.length, map[0].length);
-                        countFull += arr[9]; //обновляем число заполненных ячеек, которое получаем после работы метода
+                for(int i=0; i<map.length; i++) { //цикл по строкам
+                    for(int j=0; j<map[0].length; j++) { //цикл по столбцам
+                        if(map[i][j] == ignFlag) { //какое число в ячейке игнорируем
 
-                        //надо по полученным координатам заполнить ячейки
-                        //заполнение ячеек массива значениями по координатам из getConquer()
-                        for(int k=0; k<arr.length-2; k+=2) {
-                            if(arr[k] != -1) {
-                                map[arr[k]][arr[k+1]] = arr[8];
+                            //вызов метода, передающего координаты для заполнения
+                            int[] arr = Methods.getConquerAlt(map, i, j, ignFlag, map.length, map[0].length);
+                            countFull += arr[9]; //обновляем число заполненных ячеек, которое получаем после работы метода
+
+                            //надо по полученным координатам заполнить ячейки
+                            //заполнение ячеек массива значениями по координатам из getConquer()
+                            for(int k=0; k<arr.length-2; k+=2) {
+                                if(arr[k] != -1) {
+                                    map[arr[k]][arr[k+1]] = arr[8];
+                                }
                             }
                         }
                     }
                 }
+                Methods.arrayDisplay(map); //тестовый вывод массива
+                System.out.println("дней прошло: " + days + ". Из " + mapSquare + " ячеек заполнено " + countFull);
+                System.out.println(); //просто отступ
+                /********************MAIN LOOP END******************/
             }
+        } else {
+            //вывод результатов
             Methods.arrayDisplay(map); //тестовый вывод массива
             System.out.println("дней прошло: " + days + ". Из " + mapSquare + " ячеек заполнено " + countFull);
-            System.out.println(); //просто отступ
-            /********************MAIN LOOP END******************/
-        }/*
-        Methods.arrayDisplay(map); //тестовый вывод массива
-        System.out.println("дней прошло: " + days + ". Из " + mapSquare + " ячеек заполнено " + countFull);
-        System.out.println(); //просто отступ  ********/
+            System.out.println(); //просто отступ  ********/
+        }
     }
 }
