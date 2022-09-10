@@ -1,51 +1,4 @@
 public class Level1 {
-    public static int[] getConquer(int[][] map, int x, int y, int ignoreF, int mapRows, int mapCols) {
-
-        int[] conquerArr = new int[10];
-        int cellFill;
-        int counter = 0;
-
-        if (ignoreF == 1) cellFill = 2;
-        else cellFill = 1;
-
-        if (x + 1 <= mapRows - 1 && (map[x +1][y] == 0)) {
-            conquerArr[0] = x + 1;
-            conquerArr[1] = y;
-            counter++;
-        } else {
-            conquerArr[0] = -1;
-            conquerArr[1] = -1;
-        }
-        if (x - 1 >= 0 && (map[x -1][y] == 0)) {
-            conquerArr[2] = x - 1;
-            conquerArr[3] = y;
-            counter++;
-        } else {
-            conquerArr[2] = -1;
-            conquerArr[3] = -1;
-        }
-        if (y + 1 <= mapCols - 1 && (map[x][y +1] == 0)) {
-            conquerArr[4] = x;
-            conquerArr[5] = y + 1;
-            counter++;
-        } else {
-            conquerArr[4] = -1;
-            conquerArr[5] = -1;
-        }
-        if (y - 1 >= 0 && (map[x][y -1] == 0)) {
-            conquerArr[6] = x;
-            conquerArr[7] = y - 1;
-            counter++;
-        } else {
-            conquerArr[6] = -1;
-            conquerArr[7] = -1;
-        }
-        conquerArr[8] = cellFill;
-        conquerArr[9] = counter;
-
-        return conquerArr;
-    }
-
     public static int ConquestCampaign(int N, int M, int L, int[] battalion){
         int days = 0;
         int countFull = 0;
@@ -81,12 +34,55 @@ public class Level1 {
                     for(int j=0; j<map[0].length; j++) {
                         if(map[i][j] == ignFlag) {
 
-                            int[] arr = getConquer(map, i, j, ignFlag, map.length, map[0].length);
-                            countFull += arr[9];
+                            int mapRows = map.length;
+                            int mapCols = map[0].length;
+                            int[] conquerArr = new int[10];
+                            int cellFill;
+                            int counter = 0;
 
-                            for(int k=0; k<arr.length-2; k+=2) {
-                                if(arr[k] != -1) {
-                                    map[arr[k]][arr[k+1]] = arr[8];
+                            if (ignFlag == 1) cellFill = 2;
+                            else cellFill = 1;
+
+                            if (i + 1 <= mapRows - 1 && (map[i +1][j] == 0)) {
+                                conquerArr[0] = i + 1;
+                                conquerArr[1] = j;
+                                counter++;
+                            } else {
+                                conquerArr[0] = -1;
+                                conquerArr[1] = -1;
+                            }
+                            if (i - 1 >= 0 && (map[i -1][j] == 0)) {
+                                conquerArr[2] = i - 1;
+                                conquerArr[3] = j;
+                                counter++;
+                            } else {
+                                conquerArr[2] = -1;
+                                conquerArr[3] = -1;
+                            }
+                            if (j + 1 <= mapCols - 1 && (map[i][j +1] == 0)) {
+                                conquerArr[4] = i;
+                                conquerArr[5] = j + 1;
+                                counter++;
+                            } else {
+                                conquerArr[4] = -1;
+                                conquerArr[5] = -1;
+                            }
+                            if (j - 1 >= 0 && (map[i][j -1] == 0)) {
+                                conquerArr[6] = i;
+                                conquerArr[7] = j - 1;
+                                counter++;
+                            } else {
+                                conquerArr[6] = -1;
+                                conquerArr[7] = -1;
+                            }
+                            conquerArr[8] = cellFill;
+                            conquerArr[9] = counter;
+
+                            countFull += conquerArr[9];
+
+                            for(int k=0; k<conquerArr.length-2; k+=2) {
+                                if(conquerArr[k] != -1) {
+                                    map[conquerArr[k]][conquerArr[k+1]] = conquerArr[8];
                                 }
                             }
                         }
