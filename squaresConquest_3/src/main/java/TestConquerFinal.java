@@ -5,8 +5,8 @@ public class TestConquerFinal {
         int ignFlag; //флаг для игнорирования содержимого ячеек
 
         // получить на вход размеры массива N и M
-        int N = 5; //число строк
-        int M = 20; //число столбцов
+        int N = 3; //число строк
+        int M = 4; //число столбцов
         int mapSquare = N*M;
 
         // создать массив NxM и заполнить его нулями
@@ -17,14 +17,14 @@ public class TestConquerFinal {
             }
         }
 
-        int L = 3;
-        int[] batallion = {2, 3, 3, 8, 4, 12};
+        int L = 2;
+        int[] batallion = {2, 2, 3, 4};
 
         //проставляем начальные точки высадки
         int count = 0; //0
         for(int i=0; i<L; i++) { //2 цикла - получаем число циклов через i. i здесь чисто для счетчика циклов и все!
-            if(map[batallion[count]][batallion[count+1]] == 0) { //проверка, что ячейка пустая, т.к. зоны высадки могут повторяться
-                map[batallion[count]][batallion[count+1]] = 1;
+            if(map[batallion[count]-1][batallion[count+1]-1] == 0) { //проверка, что ячейка пустая, т.к. зоны высадки могут повторяться
+                map[batallion[count]-1][batallion[count+1]-1] = 1;
                 countFull++; //прибавление +1 только в случае заполнения ранее пустой ячейки
             }
             count+=2;
