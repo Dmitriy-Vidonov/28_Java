@@ -1,9 +1,9 @@
 public class Level1 {
     public static int ConquestCampaign(int N, int M, int L, int[] battalion){
-        int days = 0;
-        int countFull = 0;
-        int ignFlag;
-        int mapSquare = N*M;
+        int days, countFull, ignFlag, mapSquare;
+        days = 0;
+        countFull = 0;
+        mapSquare = N*M;
 
         int[][] map = new int[N][M];
         for (int n = 0; n < N; n++) {
@@ -44,39 +44,26 @@ public class Level1 {
                             else cellFill = 1;
 
                             if (i + 1 <= mapRows - 1 && (map[i +1][j] == 0)) {
-                                conquerArr[0] = i + 1;
-                                conquerArr[1] = j;
-                                counter++;
+                                conquerArr[0] = i + 1; conquerArr[1] = j; counter++;
                             } else {
-                                conquerArr[0] = -1;
-                                conquerArr[1] = -1;
+                                conquerArr[0] = -1; conquerArr[1] = -1;
                             }
                             if (i - 1 >= 0 && (map[i -1][j] == 0)) {
-                                conquerArr[2] = i - 1;
-                                conquerArr[3] = j;
-                                counter++;
+                                conquerArr[2] = i - 1; conquerArr[3] = j; counter++;
                             } else {
-                                conquerArr[2] = -1;
-                                conquerArr[3] = -1;
+                                conquerArr[2] = -1; conquerArr[3] = -1;
                             }
                             if (j + 1 <= mapCols - 1 && (map[i][j +1] == 0)) {
-                                conquerArr[4] = i;
-                                conquerArr[5] = j + 1;
-                                counter++;
+                                conquerArr[4] = i; conquerArr[5] = j + 1; counter++;
                             } else {
-                                conquerArr[4] = -1;
-                                conquerArr[5] = -1;
+                                conquerArr[4] = -1; conquerArr[5] = -1;
                             }
                             if (j - 1 >= 0 && (map[i][j -1] == 0)) {
-                                conquerArr[6] = i;
-                                conquerArr[7] = j - 1;
-                                counter++;
+                                conquerArr[6] = i; conquerArr[7] = j - 1; counter++;
                             } else {
-                                conquerArr[6] = -1;
-                                conquerArr[7] = -1;
+                                conquerArr[6] = -1; conquerArr[7] = -1;
                             }
-                            conquerArr[8] = cellFill;
-                            conquerArr[9] = counter;
+                            conquerArr[8] = cellFill; conquerArr[9] = counter;
 
                             countFull += conquerArr[9];
 
