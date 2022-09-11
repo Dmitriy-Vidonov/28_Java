@@ -1,12 +1,5 @@
 public class Level1 {
-    public static boolean contains(int[] values, int target) {
-        for (int count : values) {
-            if (count == target) return true;
-        }
-        return false;
-    }
     public static int[] MadMax(int N, int[] Tele) {
-
         int[] massivB = new int[N];
         for(int i=0; i<massivB.length; i++) {
             massivB[i] = -1;
@@ -27,7 +20,6 @@ public class Level1 {
             }
             massivB[i] = minElement;
         }
-
         int maxElement = Tele[0];
         for(int count1 : Tele) {
             if(maxElement < count1) {
@@ -51,5 +43,11 @@ public class Level1 {
             massivB[g1] = maxElement;
         }
         return massivB;
+    }
+    public static boolean contains(int[] values, int target) {
+        for (int count : values) {
+            if (count == target) return true;
+        }
+        return false;
     }
 }
