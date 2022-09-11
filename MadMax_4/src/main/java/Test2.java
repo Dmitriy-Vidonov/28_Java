@@ -85,5 +85,11 @@ public class Test2 {
             }
         }
         */
+       int[] arrayT = Level1.MadMax(7, massivA);
+        //тестовый вывод содержимого массива B
+        for(int i1=0; i1<N; i1++) {
+            System.out.print(arrayT[i1] + " ");
+        }
+        System.out.println(); //просто переход на новую строку
     }
 }

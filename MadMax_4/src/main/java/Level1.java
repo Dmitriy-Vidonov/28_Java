@@ -5,7 +5,6 @@ public class Level1 {
         }
         return false;
     }
-    
     public static int[] MadMax(int N, int[] Tele) {
 
         int[] massivB = new int[N];
@@ -16,13 +15,13 @@ public class Level1 {
         int minElement = Tele[0];
         for(int i=0; i<N/2; i++) {
             for(int g=0; g<N; g++) {
-                if(Methods.contains(massivB, Tele[g]) == false) {
+                if(contains(massivB, Tele[g]) == false) {
                     minElement = Tele[g];
                 }
             }
             for(int count : Tele) {
                 if(minElement > count
-                        && (Methods.contains(massivB, count) == false)) {
+                        && (contains(massivB, count) == false)) {
                     minElement = count;
                 }
             }
@@ -39,13 +38,13 @@ public class Level1 {
 
         for(int g1=N/2+1; g1<N; g1++) {
             for(int c=0; c<N; c++) {
-                if(Methods.contains(massivB, Tele[c]) == false) {
+                if(contains(massivB, Tele[c]) == false) {
                     maxElement = Tele[c];
                 }
             }
             for(int count : Tele) {
                 if(maxElement < count
-                        && (Methods.contains(massivB, count) == false)) {
+                        && (contains(massivB, count) == false)) {
                     maxElement = count;
                 }
             }
