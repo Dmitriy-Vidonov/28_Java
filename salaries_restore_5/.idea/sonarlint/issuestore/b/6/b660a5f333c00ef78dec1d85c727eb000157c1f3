@@ -1,0 +1,9 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ò²Øúÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+?
+java:S1659"$Declare "indexF" on a separate line.(¸úÑŠúÿÿÿÿ
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(æášßøÿÿÿÿ8´î¬ó²0
+Z	java:S1062"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8µî¬ó²0
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(—‡ª©8àã®ó²0
