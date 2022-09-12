@@ -66,5 +66,13 @@ public class Test {
             //for(int count : arrF) System.out.print(count + " "); System.out.println();
         }
         for(int count : arrF) System.out.print(count + " "); System.out.println();
+
+        /*************ТЕСТ МЕТОДА*************/
+        int[] ids = {1, 50, 1024, 40, 35};
+        int[] salary = {20000, 100000, 90000, 5000, 5000};
+        int N1 = 5;
+        int[] testArr = Level1.SynchronizingTables(N1, ids, salary);
+
+        for(int count : testArr) System.out.print(count + " "); System.out.println();
     }
 }
