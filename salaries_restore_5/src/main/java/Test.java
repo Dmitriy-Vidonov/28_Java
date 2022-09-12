@@ -15,42 +15,54 @@ public class Test {
         int N = 3; //длина обоих массивов
         int[] arrA = {50, 1, 1024}; //массив с ID сотрудников
         int[] arrF = {20000, 100000, 90000}; //массив с ЗП
-        bubbleSort(arrA); //A1
-        bubbleSort(arrF); //F
+
+        int[] arrA1 = arrA.clone(); //clone() нужен для полноценного копирования - вспомогат. массив для arrC
+        int[] arrF1 = arrF.clone(); //clone() нужен для полноценного копирования - вспомогат. массив для arrC
+        bubbleSort(arrA1);
+        bubbleSort(arrF1);
+
         //составляем итоговый массив с зависимостями ЗП от ID
-        int[] arrC = new int[arrA.length + arrF.length];
+        int[] arrC = new int[arrA1.length + arrF1.length];
         int indexA, indexF;
         indexA = indexF = 0;
         for(int i=0; i<arrC.length; i+=2) {
-            arrC[i] = arrF[indexF];
-            arrC[i+1] = arrA[indexA];
+            arrC[i] = arrF1[indexF];
+            arrC[i+1] = arrA1[indexA];
             indexA++;
             indexF++;
         }
 
-        for(int i=0; i< arrA.length; i++) { //основной цикл по списку ID сотрудников
-            int indexC=0;
-            while(arrC[indexC] != arrA[0]) {
-                indexC++;
-            }
-
-            indexF = 0;
-            while(arrF[indexF] != arrC[indexC-1]) {
-                indexF++;
-            }
-
-            int tempF = arrF[i];
-            arrF[i] = arrF[indexF];
-            arrF[indexF] = tempF;
-        }
-        //проверка полученного массива A
-        for(int i=0; i<N; i++) {
-            System.out.print(arrA[i] + " ");
-        }
+        System.out.println("массив зависимостей: ");
+        for(int count : arrC) System.out.print(count + " ");
         System.out.println();
-        //проверка полученного массива
-        for(int i=0; i<N; i++) {
-            System.out.print(arrF[i] + " ");
+
+        //пройдем одну итерацию
+        int iteration = 0;
+
+        indexA=0;
+        for(int i=0; i<arrC.length; i++) {
+            if(arrC[i] == arrA[0]) {
+                indexA = i;
+            }
         }
+        System.out.println("indexA = " + indexA);
+        System.out.println("index A salary - " + arrC[indexA-1]);
+
+        indexF=0;
+        for(int i=0; i<arrF.length; i++) {
+            if(arrF[i] == arrC[indexA-1]) {
+                indexF=i;
+            }
+        }
+
+        System.out.println("indexF = " + indexF);
+
+        int tempF = arrF[iteration];
+        arrF[iteration] = arrF[indexF];
+        arrF[indexF] = tempF;
+
+        System.out.println("arrF после смены элементов:");
+        for(int count : arrF) System.out.print(count + " "); System.out.println();
+     
     }
 }
