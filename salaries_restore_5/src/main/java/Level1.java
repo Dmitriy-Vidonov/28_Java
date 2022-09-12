@@ -17,7 +17,7 @@ public class Level1 {
         }
 
         int iteration;
-        for (iteration = 0; iteration < N; iteration++) {
+        for (iteration = 0; iteration < ids.length; iteration++) {
             for (int i = 0; i < arrC.length; i++) {
                 if (arrC[i] == ids[iteration]) {
                     indexA = i;
