@@ -12,9 +12,9 @@ public class Test {
 }
 
     public static void main(String[] args) {
-        int N = 3; //длина обоих массивов
-        int[] arrA = {50, 1, 1024}; //массив с ID сотрудников
-        int[] arrF = {20000, 100000, 90000}; //массив с ЗП
+        int N = 4; //длина обоих массивов
+        int[] arrA = {50, 1, 1024, 40}; //массив с ID сотрудников
+        int[] arrF = {20000, 100000, 90000, 5000}; //массив с ЗП
 
         int[] arrA1 = arrA.clone(); //clone() нужен для полноценного копирования - вспомогат. массив для arrC
         int[] arrF1 = arrF.clone(); //clone() нужен для полноценного копирования - вспомогат. массив для arrC
@@ -37,32 +37,34 @@ public class Test {
         System.out.println();
 
         //пройдем одну итерацию
-        int iteration = 0;
+        int iteration;
+        for(iteration=0; iteration<N; iteration++) {
+            //indexA=0;
 
-        indexA=0;
-        for(int i=0; i<arrC.length; i++) {
-            if(arrC[i] == arrA[0]) {
-                indexA = i;
+            for(int i=0; i<arrC.length; i++) {
+                if(arrC[i] == arrA[iteration]) {
+                    indexA = i;
+                }
             }
-        }
-        System.out.println("indexA = " + indexA);
-        System.out.println("index A salary - " + arrC[indexA-1]);
+            //System.out.println("indexA = " + indexA);
+            //System.out.println("index A salary - " + arrC[indexA-1]);
 
-        indexF=0;
-        for(int i=0; i<arrF.length; i++) {
-            if(arrF[i] == arrC[indexA-1]) {
-                indexF=i;
+            //indexF=0;
+            for(int i=0; i<arrF.length; i++) {
+                if(arrF[i] == arrC[indexA-1]) {
+                    indexF=i;
+                }
             }
+
+            //System.out.println("indexF = " + indexF);
+
+            int tempF = arrF[iteration];
+            arrF[iteration] = arrF[indexF];
+            arrF[indexF] = tempF;
+
+            //System.out.println("arrF после смены элементов:");
+            //for(int count : arrF) System.out.print(count + " "); System.out.println();
         }
-
-        System.out.println("indexF = " + indexF);
-
-        int tempF = arrF[iteration];
-        arrF[iteration] = arrF[indexF];
-        arrF[indexF] = tempF;
-
-        System.out.println("arrF после смены элементов:");
         for(int count : arrF) System.out.print(count + " "); System.out.println();
-     
     }
 }
