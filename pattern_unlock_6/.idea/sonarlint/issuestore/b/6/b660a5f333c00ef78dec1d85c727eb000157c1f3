@@ -1,0 +1,8 @@
+
+0
+java:S1220""Move this file to a named package.
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(Çµí‘
+f	java:S128^"LEnd this switch case with an unconditional break, return or throw statement.(òï±êÿÿÿÿÿ
+N	java:S106m"9Replace this use of System.out or System.err by a logger.(ÍÏ§¸
+N	java:S106q"9Replace this use of System.out or System.err by a logger.(Ëèú™
