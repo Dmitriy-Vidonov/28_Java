@@ -1,0 +1,20 @@
+
+0
+java:S1220""Move this file to a named package.
+c
+java:S3973"HUse indentation to denote the code conditionally executed by this "for".(Ú”¼¡ÿÿÿÿÿ
+R
+java:S1854"7Remove this useless assignment to local variable "len".(Òø£­ûÿÿÿÿ
+O
+java:S1854"9Remove this useless assignment to local variable "space".(–î¬ğ
+C
+java:S1481"(Remove this unused "len" local variable.(Òø£­ûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ã“…ÿÿÿÿÿ
+o
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(×Ã£°
+@
+java:S1481"*Remove this unused "space" local variable.(–î¬ğ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(”ï–
+J
+java:S2175"-A "ArrayList<char[]>" cannot contain a "int".(”ï–8¹ˆı³0
+]	java:S125"<This block of commented-out lines of code should be removed.(ùäÜÈüÿÿÿÿ8Ù”û³0
