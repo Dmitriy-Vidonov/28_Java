@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        String stroka = "алес гутте децум гебойген!";
+        String stroka = "алес гуттендецум гебойген!";
         int len = 8;
 
         //перевод строки в массив строк
@@ -39,7 +39,7 @@ public class Test {
                 matrix[0][letter] = wordsArray[0][letter]; //в 0-ую строку матрицы добавить посимвольно слово из wordsArray
             } karetka=0;
 
-            for(int letter=len; letter<wordsArray[0].length; letter++) {
+            for(int letter=len; letter<wordsArray[0].length; letter++) { //вторая строка
                 matrix[1][karetka] = wordsArray[0][letter];
                 karetka++;
             }
@@ -64,18 +64,33 @@ public class Test {
         i = karetka = 0;
         if((wordsArray[i].length + wordsArray[i+1].length) > len) {
 
-            for(int letter=0; letter<wordsArray[i].length; letter++) {
+            for(int letter=0; letter<wordsArray[i].length; letter++) { //вписываем первое слово
                 matrix[i][karetka] = wordsArray[i][letter]; karetka++;
             } karetka=0; //обнуление каретки при переходе на новую строку. когда добавляем +1 к rows у matrix
 
-            for(int letter=0; letter<wordsArray[i+1].length; letter++) {
+            for(int letter=0; letter<wordsArray[i+1].length; letter++) { //вписываем второе слово
                 matrix[i+1][karetka] = wordsArray[i+1][letter]; karetka++;
             }
         }*/
 
         // 1.6  - затем пробуем вторым словом вместить слово длиннее len
-        
+        int i, karetka;
+        i = karetka = 0;
+            for(int letter=0; letter<wordsArray[i].length; letter++) {
+                matrix[i][karetka] = wordsArray[i][letter]; karetka++;
+            } karetka=0;
 
+            if(wordsArray[i+1].length > len) {
+                for(int letter=0; letter<len; letter++) { //цикл по буквам внутри слова
+                    matrix[i+1][letter] = wordsArray[i+1][letter]; //в 0-ую строку матрицы добавить посимвольно слово из wordsArray
+                } karetka=0;
+
+                for(int letter=len; letter<wordsArray[i+1].length; letter++) { //вторая строка
+                    matrix[i+2][karetka] = wordsArray[i+1][letter];
+                    karetka++;
+                }
+            }
+            
        /* for(int i=0; i<wordsArray.length-2; i++) { //основной цикл по словам. число итераций = числу слов в строке
             for(int letter=0; letter<wordsArray[i].length; letter++) { //цикл по буквам внутри слова
                 matrix[0][letter] = wordsArray[i][letter]; //в 0-ую строку матрицы добавить посимвольно слово из wordsArray
@@ -90,4 +105,3 @@ public class Test {
         }
     }
 }
-
