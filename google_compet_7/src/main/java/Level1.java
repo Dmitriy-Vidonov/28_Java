@@ -28,7 +28,7 @@ public class Level1 {
                 } else {
                     for(int i = len; i > 0; i--) {
                         spisok_strok.add(s.substring(0, i));
-                        s = s.substring(0,i);
+                        s = s.substring(i);
                         break;
                     }
                 }
