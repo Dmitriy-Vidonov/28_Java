@@ -18,7 +18,7 @@ public class Level1 {
                 s = s + " ";
             }
             len = s.length();
-            for(int i=0; i<rows; i++) { //цикл по строкам
+            for(int i=0; i<rows; i++) {
                 for(int j=0; j<cols; j++) {
                     matrix[i][j] = s.charAt(pointer);
                     pointer++;
@@ -63,9 +63,10 @@ public class Level1 {
             s = "";
             for(int i1=0; i1<rows; i1++) {
                 for(int j1=0; j1<cols; j1++) {
-                    if (String.valueOf(matrix[i1][j1]).matches("[a-zA-Zа-яА-ЯёЁ]")) s += matrix[i1][j1];
+                    if (!(matrix[i1][j1] == ' ')) s += matrix[i1][j1];
                 }
             }
+            s = s.substring(0, s.length()-1);
         }
         return s;
     }
