@@ -50,7 +50,6 @@ public class Test {
         System.out.println(str);
 
         String strEncode = str; //на расшифровку даем строку, полученную в ходе зашифровки
-        //strEncode = strEncode.replace(" ", "");
 
         boolean encode = false; //флажок на расшифровку
         //rows и cols у нас известны, матрица тех же размеров
@@ -98,7 +97,7 @@ public class Test {
         strEncode = ""; //обнуляем итоговую строку дешифровки перед занесением данных из матрицы
         for(int i1=0; i1<rows; i1++) {
             for(int j1=0; j1<cols; j1++) {
-                if (String.valueOf(matrixEncode[i1][j1]).matches("[a-zа-я]")) strEncode += matrixEncode[i1][j1];
+                if (String.valueOf(matrixEncode[i1][j1]).matches("[a-zA-Zа-яА-ЯёЁ]")) strEncode += matrixEncode[i1][j1];
             }
         }
 
@@ -106,13 +105,16 @@ public class Test {
 
        System.out.println("******TEST******");
 
-       String stroka = "отдай мою лапку собакапаршивая";
+       String stroka = "ёёёёёёёёёаыва";
        System.out.println("Начальная строка - " + stroka);
 
        String zashifrStroka = Level1.TheRabbitsFoot(stroka, true);
+        // String zashifrStroka = "омоюу толл дюиа акчп йрьк";
        System.out.println("Зашифрованная строка - " + zashifrStroka);
 
-       String razhifrStroka = Level1.TheRabbitsFoot(zashifrStroka, false);
-       System.out.println("Расшифрованная строка - " + razhifrStroka);
+       String rasshifrStroka = Level1.TheRabbitsFoot(zashifrStroka, false);
+       System.out.println("Расшифрованная строка - " + rasshifrStroka);
+
+       //Надо ебануть тест! Нагенерить строк и потом сравнивать их со значниями без пробелов
     }
 }
