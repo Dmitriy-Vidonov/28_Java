@@ -1,0 +1,24 @@
+
+8
+java:S1643"Use a StringBuilder instead.(“Õ8¾ªğ‰µ0
+9
+java:S1643"Use a StringBuilder instead.(É¼Öà8¹Êú‰µ0
+9
+java:S1643 "Use a StringBuilder instead.(·¢¶·8¹Êú‰µ0
+>
+java:S1643B"Use a StringBuilder instead.(Úàâ›ùÿÿÿÿ8Öâêµ0
+0
+java:S1220""Move this file to a named package.
+U
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( şÆëùÿÿÿÿ
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.( şÆëùÿÿÿÿ8ÀÕù‰µ0
+T
+java:S1854"7Remove this useless assignment to local variable "len".(üÏšÁ8Ü‰ğ‰µ0
+R
+java:S18547"5Remove this useless assignment to local variable "i".(Ì‚ˆÌ8ìÁƒŠµ0
+=
+java:S1125"'Remove the unnecessary boolean literal.(†â„“
+K
+java:S1940B")Use the opposite operator ("!=") instead.(Úàâ›ùÿÿÿÿ8å¦éµ0

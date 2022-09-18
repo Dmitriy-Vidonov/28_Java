@@ -1,0 +1,32 @@
+
+1
+java:S1643"Use a StringBuilder instead.(Õ’¬J
+2
+java:S1643+"Use a StringBuilder instead.(àµ¨•
+7
+java:S1643-"Use a StringBuilder instead.(¿ü•ìüÿÿÿÿ
+2
+java:S1643d"Use a StringBuilder instead.(›ƒ÷¸
+0
+java:S1220""Move this file to a named package.
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(Çµí‘
+M
+java:S1854"7Remove this useless assignment to local variable "len".(§éû
+K
+java:S1854N"5Remove this useless assignment to local variable "i".(Ì‚ˆÌ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(İÅ“Éúÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+M	java:S1062"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+F
+java:S14816"+Remove this unused "encode" local variable.(éü½ûøÿÿÿÿ
+S	java:S106["9Replace this use of System.out or System.err by a logger.(öËºıÿÿÿÿ
+S	java:S106]"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+?
+java:S1940d")Use the opposite operator ("!=") instead.(›ƒ÷¸
+N	java:S106i"9Replace this use of System.out or System.err by a logger.(°ã„Ê
+N	java:S106k"9Replace this use of System.out or System.err by a logger.(ÿ®ôÒ
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(â¿·Æüÿÿÿÿ
+S	java:S106r"9Replace this use of System.out or System.err by a logger.(²à±ûıÿÿÿÿ
+P	java:S125q"<This block of commented-out lines of code should be removed.(¿¬İG
+S	java:S106u"9Replace this use of System.out or System.err by a logger.(Àñáçıÿÿÿÿ
