@@ -98,10 +98,10 @@ public class Test {
         strEncode = ""; //обнуляем итоговую строку дешифровки перед занесением данных из матрицы
         for(int i1=0; i1<rows; i1++) {
             for(int j1=0; j1<cols; j1++) {
-                if (matrixEncode[i1][j1] != ' ') strEncode += matrixEncode[i1][j1];
+                if (String.valueOf(matrixEncode[i1][j1]).matches("[a-zа-я]")) strEncode += matrixEncode[i1][j1];
             }
         }
-        
+
         System.out.println("encode - " + strEncode);
     }
 }
