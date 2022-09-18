@@ -1,0 +1,22 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å§ä¿
+0
+java:S1220""Move this file to a named package.
+Q
+java:S1854";Remove this useless assignment to local variable "arrTest".(×ñæõ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(•¬‰
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ä»—¢
+Q	java:S125"<This block of commented-out lines of code should be removed.(”©õù
+=
+java:S1125 "'Remove the unnecessary boolean literal.(‘œ—Æ
+>	java:S108 ")Either remove or fill this block of code.(‘œ—Æ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(œ³·¶ûÿÿÿÿ
+Q	java:S125'"<This block of commented-out lines of code should be removed.(ÉÇä¸
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(ù½™Åüÿÿÿÿ
+M	java:S106."9Replace this use of System.out or System.err by a logger.(°ıñT
+M
+java:S14810"0Remove this unused "maxElement1" local variable.(³ô´À8à™ñİ²0
+]	java:S1253"<This block of commented-out lines of code should be removed.(Õÿ¸øÿÿÿÿ8á™ñİ²0
+=
+java:S11254"'Remove the unnecessary boolean literal.(’¿¯
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(ÕŞ”ûøÿÿÿÿ

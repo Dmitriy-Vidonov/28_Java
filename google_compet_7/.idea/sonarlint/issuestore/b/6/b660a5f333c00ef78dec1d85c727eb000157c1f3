@@ -1,0 +1,12 @@
+
+0
+java:S1220""Move this file to a named package.
+‡
+java:S2681+"qThis statement will not be executed in a loop; only the first statement will be. The rest will execute only once.(Î³×ò
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¤¿äùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(é„À
+V	java:S125"<This block of commented-out lines of code should be removed.(†Õ®¢ıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ëö²Ş
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Á‡ò…üÿÿÿÿ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(Î³×ò
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(Î³×ò

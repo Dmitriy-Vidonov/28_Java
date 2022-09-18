@@ -1,0 +1,18 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏàŒƒüÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+U
+java:S1118":Add a private constructor to hide the implicit public one.(Œøúÿÿÿÿ
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ÏàŒƒüÿÿÿÿ8º Áæ²0
+P
+java:S1854";Remove this useless assignment to local variable "massivA".(´¥Ã2
+D
+java:S1125"'Remove the unnecessary boolean literal.(ê¾8·Õàã²0
+I
+java:S1125"'Remove the unnecessary boolean literal.(íŠêÌÿÿÿÿÿ8©å€ä²0
+D
+java:S1125&"'Remove the unnecessary boolean literal.(¨ú÷Œ8¾ Áæ²0
+I
+java:S1125,"'Remove the unnecessary boolean literal.(íŠêÌÿÿÿÿÿ8À Áæ²0

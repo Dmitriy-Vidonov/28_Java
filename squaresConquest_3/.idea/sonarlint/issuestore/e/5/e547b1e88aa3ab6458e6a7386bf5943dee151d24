@@ -1,0 +1,37 @@
+
+c
+java:S1192D"HDefine a constant instead of duplicating this literal ". Ğ˜Ğ· " 3 times.(Ò»Õªşÿÿÿÿ
+{
+java:S1192D"`Define a constant instead of duplicating this literal " ÑÑ‡ĞµĞµĞº Ğ·Ğ°Ğ¿Ğ¾Ğ»Ğ½ĞµĞ½Ğ¾ " 3 times.(Ò»Õªşÿÿÿÿ
+s
+java:S1192D"XDefine a constant instead of duplicating this literal "Ğ´Ğ½ĞµĞ¹ Ğ¿Ñ€Ğ¾ÑˆĞ»Ğ¾: " 3 times.(Ò»Õªşÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÃö±ıÿÿÿÿ
+k	java:S117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íŸŠıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ•ß—ıÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 61 to the 15 allowed.(Çµí‘
+P
+java:S1854"5Remove this useless assignment to local variable "L".(İ•ß—ıÿÿÿÿ
+A
+java:S1481"&Remove this unused "L" local variable.(İ•ß—ıÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(ô‘„Ú
+N	java:S106""9Replace this use of System.out or System.err by a logger.(íéşİ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(ùÏö
+E
+java:S11970"*Move the array designators [] to the type.(ß»¡—øÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(Ë …¸üÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106D"9Replace this use of System.out or System.err by a logger.(Ò»Õªşÿÿÿÿ
+N	java:S106E"9Replace this use of System.out or System.err by a logger.( «´¨
+E
+java:S1197S"*Move the array designators [] to the type.(ß»¡—øÿÿÿÿ
+Q	java:S125V"<This block of commented-out lines of code should be removed.(Şã£Ÿ
+S	java:S106f"9Replace this use of System.out or System.err by a logger.(Ò»Õªşÿÿÿÿ
+N	java:S106g"9Replace this use of System.out or System.err by a logger.( «´¨
+E
+java:S1197v"*Move the array designators [] to the type.(ß»¡—øÿÿÿÿ
+Q	java:S125y"<This block of commented-out lines of code should be removed.(Şã£Ÿ
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(Ò»Õªşÿÿÿÿ
+O	java:S106Š"9Replace this use of System.out or System.err by a logger.( «´¨
