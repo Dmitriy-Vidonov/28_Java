@@ -1,5 +1,7 @@
 public class Level1 {
     public static String TheRabbitsFoot(String s, boolean encode) {
+        String encodedStr = s;
+        s = s.replace(" ", "");
         int len = s.length();
         int rows = (int) Math.sqrt(len);
         int cols = (int) Math.ceil(Math.sqrt(len));
@@ -8,7 +10,6 @@ public class Level1 {
         int pointer = 0;
 
         if (encode == true) {
-            s = s.replace(" ", "");
             int diff = 0;
             if(s.length() < cols*rows){
                 diff = cols*rows-s.length();
@@ -33,19 +34,19 @@ public class Level1 {
             s = s.replace("  ", " ");
             s = s.substring(0, s.length()-1);
         } else {
-            if(s.length() < rows * cols) {
-                s += ' ';
+            if(encodedStr.length() < rows * cols) {
+                encodedStr += ' ';
             }
             int i;
             for(int j=0; j<cols-1; j++) {
                 i=0;
                 while (i<rows-1) {
-                    matrix[i][j] = s.charAt(pointer);
+                    matrix[i][j] = encodedStr.charAt(pointer);
                     pointer++;
                     i++;
                 }
-                if(s.charAt(pointer) != ' ') {
-                    matrix[rows-1][j] = s.charAt(pointer);
+                if(encodedStr.charAt(pointer) != ' ') {
+                    matrix[rows-1][j] = encodedStr.charAt(pointer);
                     pointer+=2;
                 } else {
                     matrix[rows-1][j] = ' ';
@@ -54,8 +55,8 @@ public class Level1 {
                 i++;
             }
             int c=0;
-            while (c<rows && pointer < s.length()) {
-                matrix[c][cols-1] = s.charAt(pointer);
+            while (c<rows && pointer < encodedStr.length()) {
+                matrix[c][cols-1] = encodedStr.charAt(pointer);
                 c++;
                 pointer++;
             }

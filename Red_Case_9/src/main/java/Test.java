@@ -1,6 +1,6 @@
 public class Test {
     public static void main(String[] args) {
-        String str = "отдай мою кроличью лапку";
+        String str = "отдай мою лапку собакапаршивая";
         str = str.replace(" ", ""); //убрали пробелы
         int len = str.length();
         int rows = (int) Math.sqrt(len); //число строк матрицы
@@ -102,12 +102,17 @@ public class Test {
             }
         }
 
-        System.out.println("encode - " + strEncode);
+       System.out.println("encode - " + strEncode);
 
-        String testString = "отдай мою кроличью лапку";
-        String encodedString = Level1.TheRabbitsFoot(testString, true);
-        System.out.println("кодировка - " + Level1.TheRabbitsFoot(testString, true));
-        System.out.println("длина строки = " + encodedString.length());
-        System.out.println("раскодировка - " + Level1.TheRabbitsFoot(encodedString, false));
+       System.out.println("******TEST******");
+
+       String stroka = "отдай мою лапку собакапаршивая";
+       System.out.println("Начальная строка - " + stroka);
+
+       String zashifrStroka = Level1.TheRabbitsFoot(stroka, true);
+       System.out.println("Зашифрованная строка - " + zashifrStroka);
+
+       String razhifrStroka = Level1.TheRabbitsFoot(zashifrStroka, false);
+       System.out.println("Расшифрованная строка - " + razhifrStroka);
     }
 }
