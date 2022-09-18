@@ -55,25 +55,37 @@ public class Test {
         boolean encode = false; //флажок на расшифровку
         //rows и cols у нас известны, матрица тех же размеров
         char[][] matrixEncode = new char[rows][cols]; //[5][5]
+        if(strEncode.length() < rows * cols) { //если длина строки меньше размера матрицы, то добавим в конец строки пробел
+            strEncode += ' ';
+        }
+
         int pointerEncode=0;
 
         int i;
-        for(int j=0; j<cols; j++) {
+        for(int j=0; j<cols-1; j++) {
             i=0;
-            while (i<rows && pointerEncode<strEncode.length()){
-                if(i < rows-1) {
-                    matrixEncode[i][j] = strEncode.charAt(pointerEncode);
-                    pointerEncode++;
-                    i++;
-                } else { //если последний элемент, который надо вставить в очередном шаге цикла...
-                    if (strEncode.charAt(i) != ' ') { //...не равен пробелу, то идем дальше как обычно
-                        continue;
-                    } else pointerEncode++; //если последний элемент равен пробелу, значит нам надо перескочить по строке
-                    break; //и завершить цикл
-                }
-
-           }
+            while (i<rows-1) {
+                matrixEncode[i][j] = strEncode.charAt(pointerEncode);
+                pointerEncode++;
+                i++;
+            }
+            if(strEncode.charAt(pointerEncode) != ' ') {
+                matrixEncode[rows-1][j] = strEncode.charAt(pointerEncode);
+                pointerEncode+=2;
+            } else {
+                matrixEncode[rows-1][j] = ' ';
+                pointerEncode++;
+            }
+            i++;
         }
+        //добавим посл. столбец
+        int c=0;
+        while (c<rows && pointerEncode < strEncode.length()) {
+            matrixEncode[c][cols-1] = strEncode.charAt(pointerEncode);
+            c++;
+            pointerEncode++;
+        }
+
         //тестовый вывод матрицы
         for(int i1=0; i1<rows; i1++) {
             for(int j1=0; j1<rows; j1++) {
@@ -84,6 +96,12 @@ public class Test {
 
         //считываем матрицу в строку
         strEncode = ""; //обнуляем итоговую строку дешифровки перед занесением данных из матрицы
+        for(int i1=0; i1<rows; i1++) {
+            for(int j1=0; j1<cols; j1++) {
+                if (matrixEncode[i1][j1] != ' ') strEncode += matrixEncode[i1][j1];
+            }
+        }
         
+        System.out.println("encode - " + strEncode);
     }
 }
