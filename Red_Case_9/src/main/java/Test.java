@@ -103,5 +103,11 @@ public class Test {
         }
 
         System.out.println("encode - " + strEncode);
+
+        String testString = "отдай мою кроличью лапку";
+        String encodedString = Level1.TheRabbitsFoot(testString, true);
+        System.out.println("кодировка - " + Level1.TheRabbitsFoot(testString, true));
+        System.out.println("длина строки = " + encodedString.length());
+        System.out.println("раскодировка - " + Level1.TheRabbitsFoot(encodedString, false));
     }
 }
