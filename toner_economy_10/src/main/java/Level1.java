@@ -1,7 +1,7 @@
-import java.util.*;
+import java.util.HashMap;
 
-public class Test {
-    public static void main(String[] args) {
+public class Level1 {
+    public static int PrintingCosts(String Line) {
         HashMap<String, Integer> charsTable = new HashMap<>();
 
         charsTable.put(" ", 0); charsTable.put("&", 24); charsTable.put(",", 7); charsTable.put("2", 22);
@@ -29,21 +29,14 @@ public class Test {
         charsTable.put("U", 23); charsTable.put("[", 18); charsTable.put("a", 23); charsTable.put("g", 30);
         charsTable.put("m", 22); charsTable.put("s", 21); charsTable.put("y", 24);
 
-        String testStr = " C C++";
         int res = 0;
-
-        for (int i=0; i<testStr.length(); i++) {
-            if(charsTable.containsKey(String.valueOf(testStr.charAt(i)))) {
-                res += charsTable.get(String.valueOf(testStr.charAt(i)));
+        for (int i=0; i<Line.length(); i++) {
+            if(charsTable.containsKey(String.valueOf(Line.charAt(i)))) {
+                res += charsTable.get(String.valueOf(Line.charAt(i)));
             }  else {
                 res+=23;
             }
         }
-
-        System.out.println("Строка - " + testStr);
-        System.out.println("Результат - " + res);
-
-        String testString = " C C++";
-        System.out.println(Level1.PrintingCosts(testString));
+        return res;
     }
 }
