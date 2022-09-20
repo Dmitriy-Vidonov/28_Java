@@ -3,10 +3,6 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
         HashMap<String, Integer> charsTable = new HashMap<>();
-        //String[] str3 = {" ", "'", "`"}; //под каждый расход составить свой список
-        //for(String letter : str3) charsTable.put(letter, 3); //в цикле каждому элементу списка присвоить значение
-        //System.out.println(charsTable.get("1")); //вытаскиваем данные
-        //Интересно будет сделать несколько реализаций данной задачи и потом тестами сравнить скорость выполнения
 
         charsTable.put(" ", 0); charsTable.put("&", 24); charsTable.put(",", 7); charsTable.put("2", 22);
         charsTable.put("8", 23); charsTable.put(">", 10); charsTable.put("D", 26); charsTable.put("J", 18);
@@ -33,23 +29,17 @@ public class Test {
         charsTable.put("U", 23); charsTable.put("[", 18); charsTable.put("a", 23); charsTable.put("g", 30);
         charsTable.put("m", 22); charsTable.put("s", 21); charsTable.put("y", 24);
 
-        String testStr = "111";
-        //char[] strArr = testStr.toCharArray();
+        String testStr = " C C++";
         int res = 0;
-       /* for(char letter : strArr) {
-            if(charsTable.containsKey(letter)){
-                res += charsTable.get(letter);
-            } else {
-                res+=23;
-            }
-        } */
-        for(int i=0; i<testStr.length(); i++) {
-            if(charsTable.containsKey(testStr.charAt(i))) {
-                res+=charsTable.get(testStr.charAt(i));
-            } else {
+
+        for (int i=0; i<testStr.length(); i++) {
+            if(charsTable.containsKey(String.valueOf(testStr.charAt(i)))) {
+                res += charsTable.get(String.valueOf(testStr.charAt(i)));
+            }  else {
                 res+=23;
             }
         }
+
         System.out.println("Строка - " + testStr);
         System.out.println("Результат - " + res);
     }
