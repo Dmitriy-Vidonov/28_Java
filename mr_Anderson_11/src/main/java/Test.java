@@ -3,15 +3,14 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
         String num1, num2;
-        num1 = "119"; //первое число
-        num2 = "109"; //второе число
+        num1 = "834"; //первое число
+        num2 = "109234"; //второе число
 
         int len1, len2, countLen, countLetter;
         len1 = num1.length(); //длина первого числа
         len2 = num2.length(); //длина второго числа
         countLen = len1;
         countLetter = 0;
-        boolean flagNum1 = false;
 
         //определение большего числа
         if(num1.length() > num2.length()){
@@ -23,6 +22,10 @@ public class Test {
                     break;
                 } else if (Integer.valueOf(num1.charAt(countLetter)-'0') < Integer.valueOf(num2.charAt(countLetter)-'0')) {
                     System.out.println("число " + num1 + " < числа " + num2);
+                    //если num1 меньше, то надо поменять числа местами
+                    String buffer = num1;
+                    num1 = num2;
+                    num2 = buffer;
                     break;
                 } else {
                     countLen--;
@@ -30,11 +33,18 @@ public class Test {
                 }
             }
         } else {
+            String buffer = num1;
+            num1 = num2;
+            num2 = buffer;
             System.out.println("число " + num1 + " < числа " + num2);
         }
         if(countLen == 0) {
             System.out.println("числа " + num1 + " и " + num2 + " - равны!");
         }
+
+        //переопределяем длины для чисел
+        len1 = num1.length();
+        len2 = num2.length();
 
         int[] num1Array = new int[len1]; //объявление массива для 1-ого числа
         int[] num2Array = new int[len2]; //объявление массива для 2-ого числа
@@ -89,5 +99,17 @@ public class Test {
             }
             System.out.println();
         }
+
+        //считываем результат
+        String result = "";
+        int i=0;
+        while (resArray[2][i] == 0) {
+            i++;
+            break;
+        }
+        for(int j=i; j<resArraLen; j++) {
+            result += resArray[2][j];
+        }
+        System.out.println("результат = " + result);
     }
 }
