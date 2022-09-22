@@ -32,8 +32,6 @@ public class Level1 {
            num1 = num2;
            num2 = buffer;
        }
-       if(countLen == 0) {
-       }
 
        len1 = num1.length();
        len2 = num2.length();
@@ -76,14 +74,22 @@ public class Level1 {
        }
 
        String result = "";
-       int i=0;
-       while (resArray[2][i] == 0) {
-           i++;
-           break;
+       int countI=0;
+
+       for(int i=0; i<resArraLen; i++) {
+           if (resArray[2][i] == 0) {
+               countI++;
+           } else break;
        }
 
-       if(i==1) i = 0;
-       for(int j=i; j<resArraLen; j++) {
+       if(resArraLen == 1) countI = 0;
+
+       if(countI == resArraLen) {
+           resArraLen = 1;
+           countI = 0;
+       }
+
+       for(int j=countI; j<resArraLen; j++) {
            result += resArray[2][j];
        }
        return result;

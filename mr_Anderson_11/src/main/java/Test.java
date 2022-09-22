@@ -3,8 +3,8 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
         String num1, num2;
-        num1 = "1"; //первое число
-        num2 = "321"; //второе число
+        num1 = "0"; //первое число
+        num2 = "0"; //второе число
 
         int len1, len2, countLen, countLetter;
         len1 = num1.length(); //длина первого числа
@@ -102,15 +102,22 @@ public class Test {
 
         //считываем результат
         String result = "";
-        int i=0;
-        while (resArray[2][i] == 0) {
-            i++;
-            break;
+        int countI=0;
+
+        for(int i=0; i<resArraLen; i++) {
+           if (resArray[2][i] == 0) {
+               countI++;
+           } else break;
         }
 
-        if(i==1) i = 0; //если всего один символ, то все равно нужна 1 итерация
+        if(resArraLen == 1) countI = 0; //если всего один символ, то все равно нужна 1 итерация
 
-        for(int j=i; j<resArraLen; j++) {
+        if(countI == resArraLen) {
+            resArraLen = 1;
+            countI = 0;
+        }
+
+        for(int j=countI; j<resArraLen; j++) {
             result += resArray[2][j];
         }
         System.out.println("результат = " + result);
