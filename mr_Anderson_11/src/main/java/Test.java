@@ -3,8 +3,8 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
         String num1, num2;
-        num1 = "834"; //первое число
-        num2 = "109234"; //второе число
+        num1 = "0"; //первое число
+        num2 = "0"; //второе число
 
         int len1, len2, countLen, countLetter;
         len1 = num1.length(); //длина первого числа
@@ -82,7 +82,7 @@ public class Test {
             }
             System.out.println();
         }
-
+        //вычитание столбиком из большего числа меньшее
         for(int i=resArraLen-1; i>=0; i--) {
             if(resArray[0][i] < resArray[1][i]) {
                 resArray[2][i] = resArray[0][i] + 10 - resArray[1][i];
@@ -107,6 +107,9 @@ public class Test {
             i++;
             break;
         }
+
+        if(i==1) i = 0; //если всего один символ, то все равно нужна 1 итерация
+
         for(int j=i; j<resArraLen; j++) {
             result += resArray[2][j];
         }
