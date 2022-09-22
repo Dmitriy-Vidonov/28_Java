@@ -3,8 +3,8 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
         String num1, num2;
-        num1 = "0"; //первое число
-        num2 = "0"; //второе число
+        num1 = "1"; //первое число
+        num2 = "321"; //второе число
 
         int len1, len2, countLen, countLetter;
         len1 = num1.length(); //длина первого числа
