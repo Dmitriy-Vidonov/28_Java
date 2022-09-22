@@ -26,13 +26,6 @@ public class Test {
 
         int[][] resArray = new int[3][resArraLen]; //задали массив для ответов
 
-        /*
-        //тестовый вывод обоих массивов
-        for (int num : num1Array) System.out.print(num + " ");
-        System.out.println();
-        for (int num : num2Array) System.out.print(num + " ");
-        System.out.println();*/
-
         //занесение цифр 1-ого массива в итоговый
         int countNum1 = len1-1;
         for(int i=resArraLen-1; i>=resArraLen-len1; i--) {
@@ -46,8 +39,25 @@ public class Test {
             countNum2--;
         }
 
-        //тестовый вывод результирующего массива
-        for(int i=0; i<3; i++) {
+        //вывод первых двух строк для последующей проверки
+        for(int i=0; i<2; i++) {
+            for(int j=0; j<resArraLen; j++) {
+                System.out.print(resArray[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        for(int i=resArraLen-1; i>=0; i--) {
+            if(resArray[0][i] < resArray[1][i]) {
+                resArray[2][i] = resArray[0][i] + 10 - resArray[1][i];
+                resArray[0][i-1] -= 1;
+            } else {
+                resArray[2][i] = resArray[0][i] - resArray[1][i];
+            }
+        }
+
+        //тестовый вывод последней строки
+        for(int i=2; i<3; i++) {
             for(int j=0; j<resArraLen; j++) {
                 System.out.print(resArray[i][j] + " ");
             }
