@@ -3,12 +3,38 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
         String num1, num2;
-        num1 = "13459687489"; //первое число
-        num2 = "145694856"; //второе число
+        num1 = "119"; //первое число
+        num2 = "109"; //второе число
 
-        int len1, len2;
+        int len1, len2, countLen, countLetter;
         len1 = num1.length(); //длина первого числа
         len2 = num2.length(); //длина второго числа
+        countLen = len1;
+        countLetter = 0;
+        boolean flagNum1 = false;
+
+        //определение большего числа
+        if(num1.length() > num2.length()){
+            System.out.println("число " + num1 + " > числа " + num2);
+        } else if (num1.length() == num2.length()) {
+            while (countLen > 0) {
+                if(Integer.valueOf(num1.charAt(countLetter)-'0') > Integer.valueOf(num2.charAt(countLetter)-'0')) {
+                    System.out.println("число " + num1 + " > числа " + num2);
+                    break;
+                } else if (Integer.valueOf(num1.charAt(countLetter)-'0') < Integer.valueOf(num2.charAt(countLetter)-'0')) {
+                    System.out.println("число " + num1 + " < числа " + num2);
+                    break;
+                } else {
+                    countLen--;
+                    countLetter++;
+                }
+            }
+        } else {
+            System.out.println("число " + num1 + " < числа " + num2);
+        }
+        if(countLen == 0) {
+            System.out.println("числа " + num1 + " и " + num2 + " - равны!");
+        }
 
         int[] num1Array = new int[len1]; //объявление массива для 1-ого числа
         int[] num2Array = new int[len2]; //объявление массива для 2-ого числа
