@@ -2,15 +2,16 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        int[] arr = {60, 10, 10, 15, 5};
+        int[] arr = {1,1,1,1,1,1,1,1,1,100};
 
         //1) найти max элемент
         float maxElem = arr[0];
-        for(int i=0; i<arr.length-1; i++) {
+        for(int i=0; i<arr.length; i++) {
             if(maxElem < arr[i]) {
                 maxElem = arr[i];
             }
         }
+        System.out.println("maxElem = " + maxElem);
         //2) подсчет числа голосов
         //2.1) найти общую сумму
         float sum = 0;

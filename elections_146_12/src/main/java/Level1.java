@@ -1,7 +1,7 @@
 public class Level1 {
     public static String MassVote(int N, int[] Votes) {
         float maxElem = Votes[0];
-        for(int i=0; i<Votes.length-1; i++) {
+        for(int i=0; i<Votes.length; i++) {
             if(maxElem < Votes[i]) {
                 maxElem = Votes[i];
             }
