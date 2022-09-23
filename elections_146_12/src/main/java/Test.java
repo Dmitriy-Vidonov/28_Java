@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        int[] arr = {10, 15, 10};
+        int[] arr = {60, 10, 10, 15, 5};
 
         //1) найти max элемент
         float maxElem = arr[0];
