@@ -1,0 +1,32 @@
+
+g
+java:S1192"LDefine a constant instead of duplicating this literal "Ñ‡Ğ¸ÑĞ»Ğ¾ " 4 times.(Áı¼ßşÿÿÿÿ
+n	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(è¾¢¾
+>
+java:S1643y"Use a StringBuilder instead.(‡ÓÇóúÿÿÿÿ8ÓÏ¶¶0
+0
+java:S1220""Move this file to a named package.
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(Çµí‘
+N
+java:S1854"8Remove this useless assignment to local variable "len2".(ĞÆƒ
+8
+java:S1659""Declare "num2" on a separate line.(Ï³Ì‰
+\
+java:S1659	"ADeclare "len2" and all following declarations on a separate line.(ó—êıüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Áı¼ßşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Áı¼ßşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ôÛ·øşÿÿÿÿ
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(ôÛ·øşÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(ª¶ÔÖûÿÿÿÿ
+5
+java:S21535"Remove the boxing to "Integer".(é‡¥·
+4
+java:S21539"Remove the boxing to "Integer".(‘ßçK
+M	java:S106Q"9Replace this use of System.out or System.err by a logger.(ğòä/
+S	java:S106S"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+M	java:S106b"9Replace this use of System.out or System.err by a logger.(ğòä/
+S	java:S106d"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+Z	java:S106{"9Replace this use of System.out or System.err by a logger.(Ø–çüÿÿÿÿ8ù“Ï¶¶0
+C
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8òáÕ¶¶0

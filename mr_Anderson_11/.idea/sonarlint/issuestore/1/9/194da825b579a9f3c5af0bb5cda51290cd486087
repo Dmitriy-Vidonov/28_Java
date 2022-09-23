@@ -1,0 +1,24 @@
+
+n	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(è¾¢¾
+7
+java:S1643]"Use a StringBuilder instead.(‡ÓÇóúÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ8š¶ø¶¶0
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„Œ ¶
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(„Œ ¶
+S
+java:S1854"8Remove this useless assignment to local variable "len2".(ŠŒËğşÿÿÿÿ
+8
+java:S1659""Declare "num2" on a separate line.(Ï³Ì‰
+\
+java:S1659	"ADeclare "len2" and all following declarations on a separate line.(ó—êıüÿÿÿÿ
+C	java:S108")Either remove or fill this block of code.(¢–õäÿÿÿÿÿ
+5
+java:S2153+"Remove the boxing to "Integer".(ÜÔ¯
+5
+java:S2153/"Remove the boxing to "Integer".(Ñ¦Ğ³
+<
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ
