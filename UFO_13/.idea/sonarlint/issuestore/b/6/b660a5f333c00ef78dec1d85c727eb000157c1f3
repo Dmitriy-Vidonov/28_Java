@@ -1,0 +1,15 @@
+
+0
+java:S1220""Move this file to a named package.
+Z
+java:S25834"DChange this condition so that it does not always evaluate to "false"(ŒžýË
+R
+java:S1854
+"7Remove this useless assignment to local variable "res".(ÿ´›Àúÿÿÿÿ
+V
+java:S1854/";Remove this useless assignment to local variable "divider".(¶†¼ƒþÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ëèéÔþÿÿÿÿ
+V	java:S125 "<This block of commented-out lines of code should be removed.(ì© ªøÿÿÿÿ
+M	java:S106@"9Replace this use of System.out or System.err by a logger.(˜öàc
+<
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ

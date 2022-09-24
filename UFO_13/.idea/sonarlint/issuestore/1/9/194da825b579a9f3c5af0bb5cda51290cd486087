@@ -1,0 +1,17 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ÂÍŒ
+0
+java:S1220""Move this file to a named package.
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ8±ßàú¶0
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ÂÍŒ
+P
+java:S1854":Remove this useless assignment to local variable "buffer".(µÉïª
+Q
+java:S1854";Remove this useless assignment to local variable "divider".(µÉïª
+@
+java:S1659"%Declare "divider" on a separate line.(±É‹Øşÿÿÿÿ
+R
+java:S1854"7Remove this useless assignment to local variable "res".(ÓŠÁ øÿÿÿÿ
+<
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ

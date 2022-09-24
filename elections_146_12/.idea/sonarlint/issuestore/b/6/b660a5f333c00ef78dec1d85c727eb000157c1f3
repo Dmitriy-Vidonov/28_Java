@@ -1,0 +1,10 @@
+
+0
+java:S1220""Move this file to a named package.
+T
+java:S3518"9Make sure "sum" can't be zero before doing this division.(‘ÇÇ¾úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(’µƒ¬øÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(õû“âúÿÿÿÿ
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(‡èœ¹
+<
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ

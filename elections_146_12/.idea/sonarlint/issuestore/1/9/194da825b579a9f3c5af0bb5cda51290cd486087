@@ -1,0 +1,16 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹á¢Ó
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹á¢Ó
+0
+java:S1220""Move this file to a named package.
+T
+java:S3518"9Make sure "sum" can't be zero before doing this division.(‘ÇÇ¾úÿÿÿÿ
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ8ëÛ“à¶0
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹á¢Ó
+[
+java:S1854"9Remove this useless assignment to local variable "index".(ÆšÕ¨ÿÿÿÿÿ8™Ü•à¶0
+>
+java:S1172"(Remove this unused method parameter "N".(‹á¢Ó
+H
+java:S1659"&Declare "isDouble" on a separate line.(çˆ´Äûÿÿÿÿ8Ð¥•à¶0
