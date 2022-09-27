@@ -2,7 +2,8 @@ public class Test {
     public static void main(String[] args){
         //Итоговый черновой вариант
         int L, N, time, odometer, path, red, green, result, wait;
-        int[][] track = {{3,5,5}, {5,2,2}};
+        //int[][] track = {{3,5,5}, {5,2,2}};
+        int[][] track = {{11,5,5}, {15,2,2}};
         L = 10;
         N = 2;
         time = odometer = result = wait = 0;

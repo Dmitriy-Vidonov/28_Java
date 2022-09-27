@@ -21,3 +21,12 @@ public class Test2 {
         System.out.println("how much to wait? - " + wait);
     }
 }
+
+/*
+ public static void main(String[] args) {
+ int[][] track = {{11,5,5}, {15,2,2}};
+ int L = 10;
+ int N = 2;
+ System.out.println("t = " + Unmanned(L, N, track));
+ }
+ */

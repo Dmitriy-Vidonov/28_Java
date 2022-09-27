@@ -12,18 +12,24 @@ public class Level1 {
                 path = track[i][0];
                 red = track[i][1];
                 green = track[i][2];
-                odometer += (path - odometer);
-                result = (odometer+time) - ((red + green) * ((odometer+time) / (red + green)));
-                wait = 0;
-                if(result > red) {
-                    activeLight = false;
-                } else {
-                    wait = red - result;
-                }
-                if(wait > 0) time += wait;
 
-                if(i == N-1) {
+                if(path <= L) {
+                    odometer += (path - odometer);
+                    result = (odometer+time) - ((red + green) * ((odometer+time) / (red + green)));
+                    wait = 0;
+                    if(result > red) {
+                        activeLight = false;
+                    } else {
+                        wait = red - result;
+                    }
+                    if(wait > 0) time += wait;
+
+                    if(i == N-1) {
+                        time += L;
+                    }
+                } else {
                     time += L;
+                    break;
                 }
             }
         }
