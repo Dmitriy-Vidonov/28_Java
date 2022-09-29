@@ -41,12 +41,19 @@ public class Test {
         int arrEqualsCounter = 0;
         int arr2Cols = 0; //для координат arr2 - столбцы
         int arr2Rows = 0; //для координат arr2 - строки
-        for (int i=rows; i<rows+arr2.length-1; i++) { //цикл по строкам
-            for (int j=cols; j<cols+arr2[0].length-1; j++) {
-                if (arr1[i][j] == arr2[arr2Rows][arr2Cols]) arrEqualsCounter++;
-                arr2Cols++;
+        for (int i=rows; i<=rows+(arr2.length-1); i++) { //цикл по строкам
+            arr2Cols=0;
+            for (int j=cols; j<=cols+(arr2[0].length-1); j++) {
+                if (arr1[i][j] == arr2[arr2Rows][arr2Cols]) {
+                    arrEqualsCounter++;
+                }
+                if (arr2Cols < arr2[0].length) {
+                    arr2Cols++;
+                }
             }
-            arr2Rows++;
+            if (arr2Rows < arr2.length) {
+                arr2Rows++;
+            }
         }
         System.out.println("число совпадений = " + arrEqualsCounter);
     }
