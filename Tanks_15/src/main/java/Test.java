@@ -9,6 +9,8 @@ public class Test {
         int W2 = 2; //число столбцов второго массива
         String S2 = "34 98"; //задание строки для второго массива
 
+        System.out.println(Level1.TankRush(H1, W1, S1, H2, W2, S2));
+
         //нам нужен отдельный метод по переводу строк в массив
         int[][] arr1 = Methods.StrToArr(H1, W1, S1);
         int[][] arr2 = Methods.StrToArr(H2, W2, S2);
