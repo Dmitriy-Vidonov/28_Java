@@ -19,7 +19,7 @@ public class Test {
 
         System.out.println();
 
-        boolean t = false;
+        boolean res = false;
         //нужен метод, который по начальным координатам в массиве проверит вхождение в него подмассива
         //проход по массиву, увидели совпадение с первым элементом подмассива - запустили проверку.
         //вернуло - false - продолжаем. вернуло - true - завершаем все
@@ -27,34 +27,38 @@ public class Test {
             for (int cols=0; cols<W1; cols++) { //цикл по столбцам arr1
                 if (arr1[rows][cols] == arr2[0][0]) {
                     //вызов метода проверки
-                    //if (Methods.SunArrayCheck(arr1[][], arr2[][], cols, rows) == true) break mainloop;
-                    if (t) {
+                    if (Methods.SubArrayExist(arr2, arr1, cols, rows)) {
+                        res = true;
                         break mainloop;
                     } //else System.out.print(arr1[rows][cols] + " "); //если else continue, то мы не пропечатаем совпадение
-                } else System.out.print(arr1[rows][cols] + " ");
+                } //else System.out.print(arr1[rows][cols] + " ");
             }
-            System.out.println();
+            //System.out.println();
         }
+        System.out.println("result = " + res);
         //метод проверки - пока пропишем руками идеальный вариант развития событий. Затем доьавим ограничители
-        int cols = 1;
-        int rows = 1;
+        // int cols = 1;
+        // int rows = 1;
+
+        //System.out.println("result = " + Methods.SubArrayExist(arr2, arr1, cols, rows));
+        /*
         int arrEqualsCounter = 0;
         int arr2Cols = 0; //для координат arr2 - столбцы
         int arr2Rows = 0; //для координат arr2 - строки
-        for (int i=rows; i<=rows+(arr2.length-1); i++) { //цикл по строкам
+        for (int i=rows; i<=rows+(arr2.length-1) && i<arr1.length; i++) { //цикл по строкам
             arr2Cols=0;
-            for (int j=cols; j<=cols+(arr2[0].length-1); j++) {
+            for (int j=cols; j<=cols+(arr2[0].length-1) && j<arr1[0].length; j++) {
                 if (arr1[i][j] == arr2[arr2Rows][arr2Cols]) {
                     arrEqualsCounter++;
                 }
-                if (arr2Cols < arr2[0].length) {
+                if (arr2Cols < arr2[0].length-1) {
                     arr2Cols++;
                 }
             }
-            if (arr2Rows < arr2.length) {
+            if (arr2Rows < arr2.length-1) {
                 arr2Rows++;
             }
         }
-        System.out.println("число совпадений = " + arrEqualsCounter);
+        System.out.println("число совпадений = " + arrEqualsCounter); */
     }
 }

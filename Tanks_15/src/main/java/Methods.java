@@ -23,4 +23,29 @@ public class Methods {
             System.out.println();
         }
     }
+
+    //метод для определения подмассива в массиве
+    public static boolean SubArrayExist(int[][] arr2, int[][] arr1, int startCols, int startRows) {
+        int arrEqualsCounter, arr2Rows;
+        arrEqualsCounter = arr2Rows = 0;
+        boolean result = false;
+        for (int i=startRows; i<=startRows+(arr2.length-1) && i<arr1.length; i++) { //цикл по строкам
+            int arr2Cols=0;
+            for (int j=startCols; j<=startCols+(arr2[0].length-1) && j<arr1[0].length; j++) {
+                if (arr1[i][j] == arr2[arr2Rows][arr2Cols]) {
+                    arrEqualsCounter++;
+                }
+                if (arr2Cols < arr2[0].length-1) {
+                    arr2Cols++;
+                }
+            }
+            if (arr2Rows < arr2.length-1) {
+                arr2Rows++;
+            }
+        }
+        if (arrEqualsCounter == arr2.length * arr2[0].length) {
+            result = true;
+        }
+        return result;
+    }
 }
