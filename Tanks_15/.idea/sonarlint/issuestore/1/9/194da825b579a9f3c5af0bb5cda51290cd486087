@@ -1,0 +1,23 @@
+
+Q
+java:S1066"/Merge this if statement with the enclosing one.(îü¥ˆøÿÿÿÿ8Ï¹ÎÖ¸0
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëè½ûÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëè½ûÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëè½ûÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëè½ûÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëè½ûÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëè½ûÿÿÿÿ
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óƒ—ıÿÿÿÿ8¶áÊÖ¸0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óƒ—ıÿÿÿÿ8¶áÊÖ¸0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óƒ—ıÿÿÿÿ8·áÊÖ¸0
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ8ó²ÇÖ¸0
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëè½ûÿÿÿÿ
+]
+java:S1119	";Refactor the code to remove this label and the need for it.(×“µñøÿÿÿÿ8é¹ÎÖ¸0
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óƒ—ıÿÿÿÿ8ÌáÊÖ¸0
+o	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘¯Ï÷ûÿÿÿÿ8ĞíÏÖ¸0
+H
+java:S1659%"&Declare "arr2Rows" on a separate line.(ü¿Šúÿÿÿÿ8ÑíÏÖ¸0
+C
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8¿éÆÖ¸0

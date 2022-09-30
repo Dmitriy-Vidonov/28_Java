@@ -1,0 +1,13 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óƒ—ıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óƒ—ıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óƒ—ıÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(µ³¤¡ùÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óƒ—ıÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å¨¢ºùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¸î“Èÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘¯Ï÷ûÿÿÿÿ
+A
+java:S1659"&Declare "arr2Rows" on a separate line.(ü¿Šúÿÿÿÿ

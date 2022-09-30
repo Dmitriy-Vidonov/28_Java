@@ -1,0 +1,20 @@
+
+J
+java:S1066 "/Merge this if statement with the enclosing one.(İ—Ìîùÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïé€Ì
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È…Î
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÍü¢ùÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïì‚Šüÿÿÿÿ
+k	java:S117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÜˆ¼úÿÿÿÿ
+r	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ö±Ùùÿÿÿÿ8À°¾Ö¸0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ğ„ØÇúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+V
+java:S1119";Refactor the code to remove this label and the need for it.(²õéâúÿÿÿÿ
+Q	java:S125$"<This block of commented-out lines of code should be removed.(…»©
+V	java:S125&"<This block of commented-out lines of code should be removed.(—Ûóäûÿÿÿÿ
+U	java:S106("9Replace this use of System.out or System.err by a logger.(ôÛóÙ8Á’ÚÖ¸0
+Q	java:S125*"<This block of commented-out lines of code should be removed.(®½²´
+P	java:S125-"<This block of commented-out lines of code should be removed.(„£Â
