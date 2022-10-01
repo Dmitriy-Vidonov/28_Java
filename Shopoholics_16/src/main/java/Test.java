@@ -6,15 +6,15 @@ public class Test {
       int buffer = 0;
       int index;
       int max;
-     mainloop: for (int i=0; i<arr.length; i++) {
-          for (int j=i; j<arr.length; j++) {
-              max = Methods.MaxElement(arr, j); //max элемент ищем в ограниченном уже массиве
+     /*mainloop:*/ for (int i=0; i<arr.length; i++) {
+          //for (int j=i; j<arr.length; j++) {
+              max = Methods.MaxElement(arr, i); //max элемент ищем в ограниченном уже массиве
               buffer = arr[i];
-              index = Methods.FindIndex(max, arr, j); //индекс максимального элемента
+              index = Methods.FindIndex(max, arr, i); //индекс максимального элемента
               arr[i] = max;
               arr[index] = buffer; //поменяли местами max и arr[i]
-              continue mainloop;
-          }
+            //  continue mainloop;
+          //}
       }
       int sum = 0;
       for (int i=1; i<=arr.length; i++) {
