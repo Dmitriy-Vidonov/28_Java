@@ -18,6 +18,8 @@ public class Test {
 
         //в цикле от 0 до len-1 с шагом, равным длине шаблона - проверяем вхождение подстроки в строку
         //например вхождение подстроки в часть строки
-        System.out.println(str.substring(0, (dots + stars)).equals(subStr));
+        System.out.println(str.substring(0, (dots + stars)).equals(subStr)); //true
+
+        //далее просто надо сдвигаться и дальше проверять - до предпоследнего символа, который должен быть *
     }
 }
