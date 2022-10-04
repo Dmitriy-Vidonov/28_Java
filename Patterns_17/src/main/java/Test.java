@@ -1,6 +1,6 @@
 public class Test {
     public static void main(String[] args) {
-        String str = "**";
+        String str = "*.*";
         char[] chArr = str.toCharArray();
         //for(char letter : chArr) System.out.print(letter + " ");
         int stars = 1;
@@ -8,11 +8,17 @@ public class Test {
         int index = 1;
 
         //осталось доработать лишь эту проверку. Она должна учитывать, что вся строка может быть звездочками
-        while(chArr[index] != '*' && chArr.length > 1) {
-            dots++;
-            index++;
-        } //dots = 2, stars = 1
-        System.out.println("dots = " + dots + ", index = " + index);
+        if (chArr.length > 1 && chArr[0] == '*')  {
+            while(chArr[index] != '*' && chArr.length > 1) {
+                dots++;
+                index++;
+            } //dots = 2, stars = 1
+            System.out.println("dots = " + dots + ", index = " + index);
+        } else if (chArr.length == 1 && chArr[0] == '*') {
+            System.out.println("Строка состоит из 1 *");
+        } else {
+            System.out.println("Строка изначально некорректна!");
+        }
 
         //выделить подстроку
         String subStr = str.substring(0, (dots + stars));
