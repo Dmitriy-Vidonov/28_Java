@@ -1,0 +1,20 @@
+
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Ñ±#
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ìÚ¦
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ8Çï¹³º0
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÀõ³
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ĞÀõ³8ÍŒµ³º0
+P
+java:S1854":Remove this useless assignment to local variable "result".(ˆáŒƒ
+T
+java:S1854">Remove this useless assignment to local variable "StrPartEnd".(„ìÚ¦
+F
+java:S1481"1Remove this unused "StrPartStart" local variable.(¸Ñ±#
+E
+java:S1481"/Remove this unused "StrPartEnd" local variable.(„ìÚ¦
+B
+java:S1125"'Remove the unnecessary boolean literal.(Êæœ€ÿÿÿÿÿ
+W
+java:S1126#"AReplace this if-then-else statement by a single return statement.(ŠŠÀ

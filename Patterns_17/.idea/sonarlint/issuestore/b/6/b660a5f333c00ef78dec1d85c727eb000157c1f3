@@ -1,0 +1,26 @@
+
+k	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆåé¤ùÿÿÿÿ
+e	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑëØH
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Çµí‘
+S
+java:S1854!">Remove this useless assignment to local variable "StrPartEnd".(ÑëØH
+V	java:S125"<This block of commented-out lines of code should be removed.(ÅÀ±•ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¤¯ÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(œ‚ÆÌ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ƒ˜£Áúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÔÙôÿüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.( ò¬Şıÿÿÿÿ
+L
+java:S1481 "1Remove this unused "StrPartStart" local variable.(ˆåé¤ùÿÿÿÿ
+D
+java:S1481!"/Remove this unused "StrPartEnd" local variable.(ÑëØH
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(›ÓÕÊûÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(€ûú«üÿÿÿÿ
+Q	java:S125+"<This block of commented-out lines of code should be removed.(êÜÈ•
+B
+java:S1125,"'Remove the unnecessary boolean literal.(ã’œóùÿÿÿÿ
+M	java:S106-"9Replace this use of System.out or System.err by a logger.(˜½Ç:
+M	java:S1060"9Replace this use of System.out or System.err by a logger.(›—ù%
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(¢§®€ûÿÿÿÿ
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(µ˜¨ş
