@@ -1,6 +1,6 @@
 public class Test {
     public static void main(String[] args) {
-        String str = "*.*";
+        String str = "*......*......*";
         char[] chArr = str.toCharArray();
         //for(char letter : chArr) System.out.print(letter + " ");
         int stars = 1;
@@ -49,7 +49,7 @@ public class Test {
                 break;
             }
         }
-        if (checks == (chArr.length-1) / (dots + stars)) System.out.println("Все проверки пройдены!");
+        if (checks == (chArr.length-1) / (dots + stars) && (chArr.length-1) % (dots + stars) == 0) System.out.println("Все проверки пройдены!");
         else System.out.println("В строке найдена ошибка!");
     }
 }

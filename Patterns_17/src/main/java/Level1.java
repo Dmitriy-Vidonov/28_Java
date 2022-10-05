@@ -32,7 +32,7 @@ public class Level1 {
             }
         }
 
-        if (checks == (chArr.length-1) / (dots + stars)) return true;
+        if (checks == (chArr.length-1) / (dots + stars) && (chArr.length-1) % (dots + stars) == 0) return true;
         else return false;
     }
 }
