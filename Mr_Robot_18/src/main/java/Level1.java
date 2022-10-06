@@ -1,17 +1,17 @@
 public class Level1 {
-    public static boolean Mr_Robot(int[] array) {
+    public static boolean MisterRobot(int N, int[] data) {
         boolean flag = true;
         boolean res = false;
         mainloop: while (flag == true) {
-            for(int i=0; i<array.length-2; i++) {
-                if(isThreeArrAscending(array, i)) continue; //we continue if 3-digits is ascending
-                else if (isThreeArrDescending(array, i)) break mainloop; //if 3-digits is descending, we stop all
-                else if (isThisThreeOkay(array, i)) { //check for possibility to move digits if not both asc and desc
-                    while(isThreeArrAscending(array, i) != true) { //moving digits until 3-digits arr will be asc
-                        arrElementsMoveLeft(array, i);
+            for(int i=0; i<data.length-2; i++) {
+                if(isThreeArrAscending(data, i)) continue; //we continue if 3-digits is ascending
+                else if (isThreeArrDescending(data, i)) break mainloop; //if 3-digits is descending, we stop all
+                else if (isThisThreeOkay(data, i)) { //check for possibility to move digits if not both asc and desc
+                    while(isThreeArrAscending(data, i) != true) { //moving digits until 3-digits arr will be asc
+                        arrElementsMoveLeft(data, i);
                     }
                 } else break mainloop; //if not any of options - stop all
-            } if(isFullArrayAscending(array)) {res = true; break mainloop;}
+            } if(isFullArrayAscending(data)) {res = true; break mainloop;}
             else flag = true;
         }
         return res;
