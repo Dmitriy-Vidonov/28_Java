@@ -1,4 +1,20 @@
 public class Methods {
+    //Упрощенная проверка массива из 3 чисел на возрастание
+    public static boolean isThreeArrAscending(int[] arrAsc3, int startAsc3) {
+        if(arrAsc3[startAsc3 + 2] >= arrAsc3[startAsc3 + 1]
+                && arrAsc3[startAsc3 + 2] >= arrAsc3[startAsc3]
+                && arrAsc3[startAsc3 + 1] >= arrAsc3[startAsc3]) return true;
+        else return false;
+    }
+
+    //Упрощенная проверка массива из 3 чисел на убывание
+    public static boolean isThreeArrDescending(int[] arrDesc3, int startDesc3) {
+        if(arrDesc3[startDesc3 + 2] <= arrDesc3[startDesc3 + 1]
+                && arrDesc3[startDesc3 + 2] <= arrDesc3[startDesc3]
+                && arrDesc3[startDesc3 + 1] <= arrDesc3[startDesc3]) return true;
+        else return false;
+    }
+
     //Проверка массива на 3 на возрастание
     public static boolean isArrayAscending(int[] arrAsc, int startAsc) {
         int countAsc = 0;
@@ -12,6 +28,7 @@ public class Methods {
         return resAsc;
     }
 
+    //Проверка целого массива на возрастание
     public static boolean isFullArrayAscending(int[] arrAsc) {
         int countAsc = 0;
         boolean resAsc = true;
