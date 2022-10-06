@@ -1,0 +1,24 @@
+
+u	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(Σώ¬›8νοτΊ0
+
+java:S2681""qThis statement will not be executed in a loop; only the first statement will be. The rest will execute only once.(”±έ8νοτΊ0
+Y
+java:S2589"7Remove this expression which always evaluates to "true"(‹’½¬ψÿÿÿÿ8·ποτΊ0
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Ηµν‘8ΓποτΊ0
+=
+java:S3626"Remove this redundant jump.(Ψδ‘Ζώÿÿÿÿ8ΕποτΊ0
+X	java:S125"<This block of commented-out lines of code should be removed.(µ‘ώέ8ΙποτΊ0
+X	java:S125	"<This block of commented-out lines of code should be removed.(Ϋμ£8ΙποτΊ0
+G
+java:S1481"*Remove this unused "count" local variable.(ζΥΏΌ8ΛποτΊ0
+]
+java:S1119";Refactor the code to remove this label and the need for it.(‹’½¬ψÿÿÿÿ8ΜποτΊ0
+I
+java:S1125"'Remove the unnecessary boolean literal.(‹’½¬ψÿÿÿÿ8ΝποτΊ0
+I
+java:S1125"'Remove the unnecessary boolean literal.(΄½Σ¶ϊÿÿÿÿ8ΣποτΊ0
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(Χϊÿ8ΧποτΊ0
+U	java:S106""9Replace this use of System.out or System.err by a logger.(”±έ8ΩποτΊ0
+U	java:S106""9Replace this use of System.out or System.err by a logger.(”±έ8ΫποτΊ0
+X	java:S125'"<This block of commented-out lines of code should be removed.(Ηµν‘8άποτΊ0
