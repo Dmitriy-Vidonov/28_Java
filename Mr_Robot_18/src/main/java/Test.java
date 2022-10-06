@@ -1,57 +1,36 @@
-import java.lang.reflect.Array;
-
 public class Test {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,5};
-       //System.out.println("Массив возрастающий? " + Methods.isArrayAscending(arr, 0));
-       //System.out.println("Массив убывающий? " + Methods.isArrayDescending(arr, 0));
+      //  int[] arrTest = {5,6,2};
+      /*  if(arrTest[2] >= arrTest[1] && arrTest[2] >= arrTest[0] && arrTest[1] >= arrTest[0]) System.out
+                .println("Тройка чисел отсортирована по возрастанию");
+        else if(arrTest[2] <= arrTest[1] && arrTest[2] <= arrTest[0] && arrTest[1] <= arrTest[0]) System.out
+                .println("Тройка чисел отсортирована по убыванию");
+        else System.out.println("Тройка чисел не сортирована ни так ни так"); */
+      /*  if(Methods.isThreeArrAscending(arrTest, 0)) System.out.println("Тройка чисел отсортирована по возрастанию");
+        else if(Methods.isThreeArrDescending(arrTest, 0)) System.out.println("Тройка чисел отсортирована по убыванию");
+        else System.out.println("Тройка чисел не сортирована ни так ни так"); */
 
-       //метод перестановки
-       int startPoint = 0; //стартовая точка, от которой идет отсчет 3-х элементов массива
-       int[] arrTest = {1,3,4,5,6,7,2};
-       for(int i=startPoint; i<arrTest.length-2; i++) {
-           System.out.println("Проверка на убывание при i:  " + i + " = " + Methods.isArrayDescending(arrTest, i));
-           System.out.println("Проверка на возрастание при i:  " + i + " = " + Methods.isArrayAscending(arrTest, i));
-           System.out.println("Проверка на готовность тройки:  " + i + " = " + Methods.isThisThreeOkay(arrTest, i));
-       }
+        //возможно сделать while с проверкой некоего флага, который будет известен после всего цикла. А потом повторить если что
+        int startPoint = 0; //стартовая точка, от которой идет отсчет 3-х элементов массива
+        //int[] arrTest = {1,3,4,5,6,2,7}; //все проходит
+        int[] arrTest = {1,2,4,3};
+        boolean flag = true;
+        int count = 0;
 
-        /*
-       Methods.arrElementsMoveLeft(arrTest, startPoint);
-       for(int nums : arrTest) System.out.print(nums + " ");
-       System.out.println();
-       Methods.arrElementsMoveLeft(arrTest, startPoint);
-       for(int nums : arrTest) System.out.print(nums + " ");
-       System.out.println();
-       Methods.arrElementsMoveLeft(arrTest, startPoint);
-       for(int nums : arrTest) System.out.print(nums + " ");
-       System.out.println();
-       Methods.arrElementsMoveLeft(arrTest, startPoint);
-       for(int nums : arrTest) System.out.print(nums + " ");
-       System.out.println();
-*/
-       //метод проверки - стоит ли вообще трогать 3 элемента?
-       /*
-        if (arrTest[startPoint] >= arrTest[startPoint + 2] && arrTest[startPoint] <= arrTest[startPoint + 1])
-           System.out.println("Есть смысл перестановки");
-       else System.out.println("Смысла в перестановке нет");
-        */
-       //А нафига нам вообще эти перестановки мутить, если проверка нам даст ответ по сути?
-       //нам же проверку надо сделать, а не вернуть переставленные элементы
-       //то есть по сути каждые тройки проверить на возможность перестановки и все!
-       //если хоть в 1-й нельзя, значит и везде нельзя, сразу стопаем
-       //нет смысла проверять тройку элементов на возрастание или убывание - сразу проверка на целесообразность перестановки
-
-       int count = 0;
-       //это неверный метод по итогу. и слишком долгий
-     /*  for(int i=0; i<arrTest.length-2; i++) {
-           if (Methods.isArrayAscending(arrTest, i)) count++;
-           else if (Methods.isThisThreeOkay(arrTest, i)) Methods.arrElementsMoveLeft(arrTest, i);
-           else break;
-       }*/
-       if(Methods.isFullArrayAscending(arrTest)) System.out.println("Можно преобразовать");
-       else System.out.println("Нельзя преобразовать");
-       //if (count == arrTest.length-2) System.out.println("Преобразовать можно");
-       //else System.out.println("Преобразовать нельзя");
-       //System.out.println("count = " + count);
+        mainloop: while (flag == true) {
+            for(int i=startPoint; i<arrTest.length-2; i++) {
+               if(Methods.isThreeArrAscending(arrTest, i)) continue; //если тройка по возрастанию - продолжаем
+               else if (Methods.isThreeArrDescending(arrTest, i)) break mainloop; //если тройка по убыванию - стопаем все
+               else if (Methods.isThisThreeOkay(arrTest, i)) { //если не по возрастанию и  не по убыванию - проверить на возможность перестановки
+                   //нужен цикл, в котором будем после перестановки проверять - по возрастанию получилось или еще нет
+                   while(Methods.isThreeArrAscending(arrTest, i) != true) { //ВНИМАТЕЛЬНО ПРОСТЕСТИРОВАТЬ НА РАЗНЫХ ДАННЫХ
+                       Methods.arrElementsMoveLeft(arrTest, i);
+                   }
+               } else break mainloop; //если не то и не другое и не третье - все тормозим
+            } if(Methods.isFullArrayAscending(arrTest)) break mainloop;
+            else flag = true;
+        }
+        System.out.println("Итоговый массив:");
+        for(int nums : arrTest) System.out.print(nums + " "); System.out.println();
     }
 }
