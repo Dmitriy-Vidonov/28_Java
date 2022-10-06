@@ -34,3 +34,10 @@ public class Test {
         for(int nums : arrTest) System.out.print(nums + " "); System.out.println();
     }
 }
+/*
+   //method check
+    public static void main(String[] args) {
+        int[] arrtest = {1,3,4,5,6,2,7};
+        System.out.println(Mr_Robot(arrtest));
+    }
+ */
