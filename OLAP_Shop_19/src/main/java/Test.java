@@ -37,6 +37,19 @@ public class Test {
         for (Map.Entry<String, Integer> testEntry2 : testMap2.entrySet()) {
             System.out.println(testEntry2.getKey() + " --> " + testEntry2.getValue());
         } System.out.println();
+
+        //Полученную мапу надо перевести в строку
+        String resultStr = testMap2.toString(); //создали строку для вывода
+        System.out.println("resultStr = " + resultStr);
+
+        StringBuilder sb = new StringBuilder("");
+
         
+        System.out.println("sb = " + sb);
+
+
+        String[] resArray = resultStr.split(",");
+
+        //for(String word : resArray) System.out.print(word + " | ");
     }
 }
