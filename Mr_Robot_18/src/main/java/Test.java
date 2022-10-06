@@ -8,12 +8,12 @@ public class Test {
 
        //метод перестановки
        int startPoint = 0; //стартовая точка, от которой идет отсчет 3-х элементов массива
-       int[] arrTest = {1,2,3,4,5,7,6};
-      /* for(int i=startPoint; i<arrTest.length-2; i++) {
+       int[] arrTest = {1,3,4,5,6,7,2};
+       for(int i=startPoint; i<arrTest.length-2; i++) {
            System.out.println("Проверка на убывание при i:  " + i + " = " + Methods.isArrayDescending(arrTest, i));
            System.out.println("Проверка на возрастание при i:  " + i + " = " + Methods.isArrayAscending(arrTest, i));
            System.out.println("Проверка на готовность тройки:  " + i + " = " + Methods.isThisThreeOkay(arrTest, i));
-       } */
+       }
 
         /*
        Methods.arrElementsMoveLeft(arrTest, startPoint);
@@ -43,21 +43,15 @@ public class Test {
 
        int count = 0;
        //это неверный метод по итогу. и слишком долгий
-       for(int i=0; i<arrTest.length-2; i++) {
-           if ((!Methods.isArrayDescending(arrTest, i)
-                   && Methods.isArrayAscending(arrTest, i)
-                   && !Methods.isThisThreeOkay(arrTest, i))
-                   ||
-                   (!Methods.isArrayDescending(arrTest, i)
-                           && !Methods.isArrayAscending(arrTest, i)
-                           && Methods.isThisThreeOkay(arrTest, i))
-                   ||
-                   (!Methods.isArrayDescending(arrTest, i)
-                           && !Methods.isArrayAscending(arrTest, i)
-                           && !Methods.isThisThreeOkay(arrTest, i))) count++;
+     /*  for(int i=0; i<arrTest.length-2; i++) {
+           if (Methods.isArrayAscending(arrTest, i)) count++;
+           else if (Methods.isThisThreeOkay(arrTest, i)) Methods.arrElementsMoveLeft(arrTest, i);
            else break;
-       }
-       if (count == arrTest.length-2) System.out.println("Преобразовать можно");
-       else System.out.println("Преобразовать нельзя");
+       }*/
+       if(Methods.isFullArrayAscending(arrTest)) System.out.println("Можно преобразовать");
+       else System.out.println("Нельзя преобразовать");
+       //if (count == arrTest.length-2) System.out.println("Преобразовать можно");
+       //else System.out.println("Преобразовать нельзя");
+       //System.out.println("count = " + count);
     }
 }

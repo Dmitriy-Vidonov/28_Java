@@ -1,5 +1,5 @@
 public class Methods {
-    //Проверка массива на возрастание
+    //Проверка массива на 3 на возрастание
     public static boolean isArrayAscending(int[] arrAsc, int startAsc) {
         int countAsc = 0;
         boolean resAsc = true;
@@ -12,7 +12,19 @@ public class Methods {
         return resAsc;
     }
 
-    //Проверка массива на убывание
+    public static boolean isFullArrayAscending(int[] arrAsc) {
+        int countAsc = 0;
+        boolean resAsc = true;
+        for (int i = 0; i+1 < arrAsc.length; i++) {
+            if (arrAsc[i+1] >= arrAsc[i]) {
+                countAsc++;
+            }
+        }
+        if ((countAsc != arrAsc.length-1)) return false;
+        return resAsc;
+    }
+
+    //Проверка массива по 3 на убывание
     public static boolean isArrayDescending(int[] arrDesc, int startDesc) {
         int countDesc = 0;
         boolean resDesc = true;
