@@ -1,0 +1,11 @@
+
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(åÓØä8ÔàÃŸ»0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÙ­°úÿÿÿÿ8×àÃŸ»0
+‚
+java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "resArray".(ˆµÛØúÿÿÿÿ8ØàÃŸ»0
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ8ªáÃŸ»0
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÙ­°úÿÿÿÿ8¬áÃŸ»0
+d
+java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ÓËØQ8ĞáÃŸ»0
