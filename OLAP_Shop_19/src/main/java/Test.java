@@ -40,16 +40,21 @@ public class Test {
 
         //Полученную мапу надо перевести в строку
         String resultStr = testMap2.toString(); //создали строку для вывода
-        System.out.println("resultStr = " + resultStr);
+        //System.out.println("resultStr = " + resultStr);
 
-        StringBuilder sb = new StringBuilder("");
+        resultStr = resultStr.replaceAll("[{}]", ""); //убрали фигурные скобки
+        resultStr = resultStr.replaceAll("=", " "); //убрали знаки =
+        System.out.println("resultStr after regexp = " + resultStr);
 
-        
-        System.out.println("sb = " + sb);
+        String[] resArray = resultStr.split(", ");
 
-
-        String[] resArray = resultStr.split(",");
-
-        //for(String word : resArray) System.out.print(word + " | ");
+        for(String word : resArray) System.out.print(word + ",");
     }
 }
+/*
+ public static void main(String[] args) {
+        String[] arrayTest = {"платье1 5", "сумка32 2", "платье1 1", "сумка23 2", "сумка128 4"};
+        String[] resArr = ShopOLAP(5, arrayTest);
+        for(String word : resArr) System.out.print(word + ",");
+    }
+*/
