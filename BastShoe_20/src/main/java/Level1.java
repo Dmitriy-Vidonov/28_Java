@@ -24,11 +24,11 @@ public class Level1 {
                     index++;
                     break;
                 } else {
-                    Level1.currenString += command.substring(2,command.length());
-                    bufferStr = Level1.undoArray.get(index);
+                    Level1.currenString += command.substring(2,command.length()); //сначала обновляем текущую строку
+                    bufferStr = Level1.undoArray.get(index); //заносим ячейку с текущим индексом в буфер
                     undoArray.clear(); //очистка массива изменений
-                    undoArray.add(bufferStr);
-                    undoArray.add(Level1.currenString); //добавляем состояние строки в массив Undo()
+                    undoArray.add(bufferStr); //сначала добавляем буферную ячейку
+                    undoArray.add(Level1.currenString); //затем добавляем текущее состояние строки в массив изменений
                     index=1; //индекс ставим во вторую из двух позицию
                     undoFlag = false; //обнуляем флажок
                     break;
