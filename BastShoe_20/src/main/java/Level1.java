@@ -48,8 +48,8 @@ public class Level1 {
                     Level1.currenString = undoArray.get(0);
                 }
                 break;
-            case 5:
-                System.out.println("исполняем 5-ю команду");
+            case 5: //код для выполнения команды (5) Redo()
+                System.out.print("Redo: ");
                 break;
             default:
                 System.out.println(Level1.currenString);
@@ -71,5 +71,6 @@ public class Level1 {
         System.out.println(BastShoe("4"));
         System.out.println(BastShoe("4"));
         System.out.println(BastShoe("4"));
+        for(String word : undoArray) System.out.print(word + " | ");
     }
 }
