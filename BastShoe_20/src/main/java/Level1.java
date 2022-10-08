@@ -51,6 +51,10 @@ public class Level1 {
                 break;
             case 5: //код для выполнения команды (5) Redo()
                 System.out.print("Redo: ");
+                if(index >= 0 && index < undoArray.size()-1) {
+                    index++;
+                    Level1.currenString = undoArray.get(index);
+                } else Level1.currenString = undoArray.get(undoArray.size()-1);
                 break;
             default:
                 System.out.println(Level1.currenString);
@@ -66,6 +70,10 @@ public class Level1 {
         System.out.println(BastShoe("2 2"));
         System.out.println(BastShoe("4"));
         System.out.println(BastShoe("4"));
+        System.out.println(BastShoe("4"));
+        System.out.println(BastShoe("5"));
+        System.out.println(BastShoe("5"));
+        System.out.println(BastShoe("5"));
       /*  System.out.println(BastShoe("1 *"));
         System.out.println(BastShoe("4"));
         System.out.println(BastShoe("4"));
