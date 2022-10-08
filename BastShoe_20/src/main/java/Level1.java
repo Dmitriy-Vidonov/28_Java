@@ -3,7 +3,7 @@ import java.util.*;
 public class Level1 {
     public static String currenString = ""; //переменная как статическое поле класса
     public static ArrayList<String> undoArray = new ArrayList<>(); //массив строк для операции Undo()
-    public static int undoCounter = 1; //счетчик для расчета индекса в undoArray
+    public static int index = -1;
 
     public static String BastShoe(String command){
         int strCommand = 0;
@@ -18,6 +18,7 @@ public class Level1 {
             case 1: //код для выполнения команды (1) Добавить(S)
                 Level1.currenString += command.substring(2,command.length());
                 undoArray.add(Level1.currenString); //добавляем состояние строки в массив Undo()
+                index++;
                 break;
             case 2: //код для выполнения команды (2) Удалить(N)
                 String[] command2 = command.split(" ");
@@ -25,9 +26,11 @@ public class Level1 {
                 if(toDelete <= Level1.currenString.length()) {
                     Level1.currenString = Level1.currenString.substring(0, Level1.currenString.length() - toDelete);
                     undoArray.add(Level1.currenString); //добавляем состояние строки в массив Undo()
+                    index++;
                 } else {
                     Level1.currenString = "";
                     undoArray.add(Level1.currenString); //добавляем состояние строки в массив Undo()
+                    index++;
                 }
                 break;
             case 3: //код для выполнения команды (3) Выдать(i)
@@ -41,12 +44,10 @@ public class Level1 {
                 break;
             case 4: //код для выполнения команды (4) Undo()
                 System.out.print("Undo: ");
-                if(Level1.undoCounter++ < undoArray.size()-1){
-                    Level1.currenString = undoArray.get((undoArray.size()-1) - Level1.undoCounter);
-                    Level1.undoCounter++;
-                } else {
-                    Level1.currenString = undoArray.get(0);
-                }
+                if(index > 0) {
+                    index--;
+                    Level1.currenString = undoArray.get(index);
+                } else Level1.currenString = undoArray.get(0);
                 break;
             case 5: //код для выполнения команды (5) Redo()
                 System.out.print("Redo: ");
@@ -61,16 +62,22 @@ public class Level1 {
     public static void main(String[] args) {
         System.out.println(BastShoe("1 Привет"));
         System.out.println(BastShoe("1 , Мир!"));
-        System.out.println(BastShoe("2 1"));
-        System.out.println(BastShoe("3 1"));
-        System.out.println(BastShoe("2 0"));
-        System.out.println(BastShoe("3 0"));
-        System.out.println(BastShoe("2 0"));
+        System.out.println(BastShoe("1 ++"));
+        System.out.println(BastShoe("2 2"));
+        System.out.println(BastShoe("4"));
+        System.out.println(BastShoe("4"));
+      /*  System.out.println(BastShoe("1 *"));
+        System.out.println(BastShoe("4"));
+        System.out.println(BastShoe("4"));
+        System.out.println(BastShoe("4"));
+        System.out.println(BastShoe("3 6"));
+        System.out.println(BastShoe("2 100"));
+        System.out.println(BastShoe("1 Привет"));
+        System.out.println(BastShoe("1 , Мир!"));
         System.out.println(BastShoe("1 ++"));
         System.out.println(BastShoe("4"));
-        System.out.println(BastShoe("4"));
-        System.out.println(BastShoe("4"));
-        System.out.println(BastShoe("4"));
+        System.out.println(BastShoe("4"));*/
+
         for(String word : undoArray) System.out.print(word + " | ");
     }
 }
