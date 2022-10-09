@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6cf7d0b-e6ff-46d5-8e37-24de50ccb4f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level1_Draft.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Level1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Level1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Level1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Level1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +46,15 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="Level1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Level1" />
+    <configuration name="Level1_Draft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level1_Draft" />
+      <module name="BastShoe_20" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Level1_Draft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level1_Draft" />
       <module name="BastShoe_20" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -52,7 +62,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Level1" />
+        <item itemvalue="Application.Level1_Draft" />
+        <item itemvalue="Application.Level1_Draft" />
       </list>
     </recent_temporary>
   </component>
