@@ -34,16 +34,36 @@ public class Level1 {
                     break;
                 }
             case 2: //код для выполнения команды (2) Удалить(N)
-                String[] command2 = command.split(" ");
-                toDelete = Integer.valueOf(command2[1]);
-                if(toDelete <= Level1.currenString.length()) {
+                String[] command2 = command.split(" "); //разделение входной строки на 2 части
+                toDelete = Integer.valueOf(command2[1]); //в переменную toDelete помещается строка для удаления
+                if(toDelete <= Level1.currenString.length() && undoFlag == false) {
                     Level1.currenString = Level1.currenString.substring(0, Level1.currenString.length() - toDelete);
                     undoArray.add(Level1.currenString); //добавляем состояние строки в массив Undo()
                     index++;
-                } else {
+                }
+                else if(!(toDelete <= Level1.currenString.length()) && undoFlag == false){
                     Level1.currenString = "";
                     undoArray.add(Level1.currenString); //добавляем состояние строки в массив Undo()
                     index++;
+                }
+                else if(toDelete <= Level1.currenString.length() && undoFlag == true) {
+                    Level1.currenString = Level1.currenString.substring(0, Level1.currenString.length() - toDelete);
+                    bufferStr = Level1.undoArray.get(index);
+                    undoArray.clear();
+                    undoArray.add(bufferStr);
+                    undoArray.add(Level1.currenString);
+                    index=1; //индекс ставим во вторую из двух позицию
+                    undoFlag = false; //обнуляем флажок
+                    break;
+                } else {
+                    Level1.currenString = "";
+                    bufferStr = Level1.undoArray.get(index);
+                    undoArray.clear();
+                    undoArray.add(bufferStr);
+                    undoArray.add(Level1.currenString);
+                    index=1;
+                    undoFlag = false; //обнуляем флажок
+                    break;
                 }
                 break;
             case 3: //код для выполнения команды (3) Выдать(i)
@@ -80,24 +100,7 @@ public class Level1 {
     public static void main(String[] args) {
         System.out.println(BastShoe("1 Привет"));
         System.out.println(BastShoe("1 , Мир!"));
-        System.out.println(BastShoe("1 ++"));
-        System.out.println(BastShoe("4"));
-        System.out.println(BastShoe("4"));
-        System.out.println(BastShoe("5"));
-        System.out.println(BastShoe("4"));
-        System.out.println(BastShoe("5"));
-        System.out.println(BastShoe("5"));
-        System.out.println(BastShoe("5"));
-        System.out.println(BastShoe("5"));
-        System.out.println(BastShoe("4"));
-        System.out.println(BastShoe("4"));
-        System.out.println(BastShoe("1 ++"));
-        System.out.println(BastShoe("4"));
-        System.out.println(BastShoe("1 !!"));
-        System.out.println(BastShoe("4"));
-        System.out.println(BastShoe("1 **"));
-        System.out.println(BastShoe("1 &&"));
-        System.out.println(BastShoe("1 **"));
+        
 
         for(String word : undoArray) System.out.print(word + " | ");
     }
