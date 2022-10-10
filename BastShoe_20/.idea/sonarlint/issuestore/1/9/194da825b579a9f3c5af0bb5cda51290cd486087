@@ -1,0 +1,42 @@
+
+„
+java:S1319]"iThe type of "undoArray" should be an interface such as "List" rather than the implementation "ArrayList".(Å†ÚÑûÿÿÿÿ
+n
+java:S1104\"XMake currenString a static final constant or non-public and provide accessors if needed.(ƒáð¨
+p
+java:S1104]"UMake undoArray a static final constant or non-public and provide accessors if needed.(Å†ÚÑûÿÿÿÿ
+l
+java:S1104^"QMake index a static final constant or non-public and provide accessors if needed.(ª¾¨©ÿÿÿÿÿ
+j
+java:S1104_"TMake undoFlag a static final constant or non-public and provide accessors if needed.(…×€î
+p
+java:S1104`"UMake bufferStr a static final constant or non-public and provide accessors if needed.(óí»„ýÿÿÿÿ
+H
+java:S1444\"2Make this "public static currenString" field final(ƒáð¨
+J
+java:S1444]"/Make this "public static undoArray" field final(Å†ÚÑûÿÿÿÿ
+F
+java:S1444^"+Make this "public static index" field final(ª¾¨©ÿÿÿÿÿ
+D
+java:S1444_".Make this "public static undoFlag" field final(…×€î
+J
+java:S1444`"/Make this "public static bufferStr" field final(óí»„ýÿÿÿÿ
+8
+java:S2386]"Make this member "protected".(Å†ÚÑûÿÿÿÿ
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ8žÃµß»0
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ³—ùüÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ˆ³—ùüÿÿÿÿ
+G
+java:S1481"1Remove this unused "bufferString" local variable.(‚»…
+=
+java:S1125"'Remove the unnecessary boolean literal.(ÕªÚ
+=
+java:S1125#"'Remove the unnecessary boolean literal.(¸ºÁÒ
+>
+java:S1940("(Use the opposite operator (">") instead.(£“†š
+=
+java:S1125("'Remove the unnecessary boolean literal.(£“†š
+B
+java:S1125-"'Remove the unnecessary boolean literal.(â½¸ªþÿÿÿÿ

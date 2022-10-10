@@ -1,0 +1,11 @@
+
+G
+java:S1481"1Remove this unused "bufferString" local variable.(‚»…
+N	java:S106	"9Replace this use of System.out or System.err by a logger.(÷®ñÖ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ö™Ÿí
+S	java:S106"9Replace this use of System.out or System.err by a logger.(—€‹äüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ì®©îøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Æ¾—Åüÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(õâŸµ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(–Ô³ã
+T	java:S106"9Replace this use of System.out or System.err by a logger.(¯°İ8“ı’ »0

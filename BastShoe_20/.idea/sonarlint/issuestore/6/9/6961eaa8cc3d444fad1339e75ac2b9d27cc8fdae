@@ -1,0 +1,73 @@
+
+…
+java:S1319^"iThe type of "undoArray" should be an interface such as "List" rather than the implementation "ArrayList".(Å“ìL8®È«ß»0
+z
+java:S1104]"XMake currenString a static final constant or non-public and provide accessors if needed.(ˆª×óıÿÿÿÿ8°È«ß»0
+q
+java:S1104^"UMake undoArray a static final constant or non-public and provide accessors if needed.(Å“ìL8°È«ß»0
+s
+java:S1104_"QMake index a static final constant or non-public and provide accessors if needed.(§…çÜûÿÿÿÿ8°È«ß»0
+v
+java:S1104`"TMake undoFlag a static final constant or non-public and provide accessors if needed.(™™Äâÿÿÿÿÿ8°È«ß»0
+r
+java:S1104a"UMake bufferStr a static final constant or non-public and provide accessors if needed.(ÊÊé8°È«ß»0
+T
+java:S1444]"2Make this "public static currenString" field final(ˆª×óıÿÿÿÿ8°È«ß»0
+K
+java:S1444^"/Make this "public static undoArray" field final(Å“ìL8°È«ß»0
+M
+java:S1444_"+Make this "public static index" field final(§…çÜûÿÿÿÿ8±È«ß»0
+P
+java:S1444`".Make this "public static undoFlag" field final(™™Äâÿÿÿÿÿ8±È«ß»0
+L
+java:S1444a"/Make this "public static bufferStr" field final(ÊÊé8±È«ß»0
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¹ª«‰úÿÿÿÿ8²ã¬ß»0
+9
+java:S2386^"Make this member "protected".(Å“ìL8ÖÈ«ß»0
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ³—ùüÿÿÿÿ8ØÈ«ß»0
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ˆ³—ùüÿÿÿÿ8ØÈ«ß»0
+N
+java:S1481"1Remove this unused "bufferString" local variable.(‚»…8ÚÈ«ß»0
+I
+java:S1125"'Remove the unnecessary boolean literal.(¯ƒÜ¹ÿÿÿÿÿ8ÜÈ«ß»0
+D
+java:S1125#"'Remove the unnecessary boolean literal.(¸ºÁÒ8ßÈ«ß»0
+E
+java:S1940("(Use the opposite operator (">") instead.(£“†š8ßÈ«ß»0
+D
+java:S1125("'Remove the unnecessary boolean literal.(£“†š8àÈ«ß»0
+I
+java:S1125-"'Remove the unnecessary boolean literal.(â½¸ªşÿÿÿÿ8àÈ«ß»0
+U	java:S106d"9Replace this use of System.out or System.err by a logger.(‚ğïŸ8çÈ«ß»0
+Z	java:S106e"9Replace this use of System.out or System.err by a logger.(ªæô•üÿÿÿÿ8èÈ«ß»0
+U	java:S106f"9Replace this use of System.out or System.err by a logger.(šÃÙ—8èÈ«ß»0
+U	java:S106g"9Replace this use of System.out or System.err by a logger.(İè‚8éÈ«ß»0
+U	java:S106h"9Replace this use of System.out or System.err by a logger.(ñÊè8éÈ«ß»0
+U	java:S106i"9Replace this use of System.out or System.err by a logger.(ñÊè8êÈ«ß»0
+U	java:S106j"9Replace this use of System.out or System.err by a logger.(Íé¼œ8ëÈ«ß»0
+U	java:S106k"9Replace this use of System.out or System.err by a logger.(ñÊè8ëÈ«ß»0
+U	java:S106l"9Replace this use of System.out or System.err by a logger.(ñÊè8ëÈ«ß»0
+U	java:S106m"9Replace this use of System.out or System.err by a logger.(ñÊè8ìÈ«ß»0
+U	java:S106n"9Replace this use of System.out or System.err by a logger.(¿ìöÄ8ìÈ«ß»0
+Z	java:S106o"9Replace this use of System.out or System.err by a logger.(ªƒû€úÿÿÿÿ8íÈ«ß»0
+U	java:S106p"9Replace this use of System.out or System.err by a logger.(‚ğïŸ8íÈ«ß»0
+Z	java:S106q"9Replace this use of System.out or System.err by a logger.(ªæô•üÿÿÿÿ8íÈ«ß»0
+U	java:S106r"9Replace this use of System.out or System.err by a logger.(šÃÙ—8îÈ«ß»0
+U	java:S106s"9Replace this use of System.out or System.err by a logger.(ñÊè8îÈ«ß»0
+U	java:S106t"9Replace this use of System.out or System.err by a logger.(ñÊè8ïÈ«ß»0
+U	java:S106u"9Replace this use of System.out or System.err by a logger.(ïÿ½‚8ïÈ«ß»0
+U	java:S106v"9Replace this use of System.out or System.err by a logger.(ñÊè8ïÈ«ß»0
+U	java:S106w"9Replace this use of System.out or System.err by a logger.(ïÿ½‚8ğÈ«ß»0
+U	java:S106x"9Replace this use of System.out or System.err by a logger.(ïÿ½‚8ğÈ«ß»0
+U	java:S106y"9Replace this use of System.out or System.err by a logger.(ïÿ½‚8ğÈ«ß»0
+U	java:S106z"9Replace this use of System.out or System.err by a logger.(ïÿ½‚8ñÈ«ß»0
+U	java:S106{"9Replace this use of System.out or System.err by a logger.(ñÊè8ñÈ«ß»0
+U	java:S106|"9Replace this use of System.out or System.err by a logger.(ñÊè8ñÈ«ß»0
+U	java:S106}"9Replace this use of System.out or System.err by a logger.(İè‚8òÈ«ß»0
+U	java:S106~"9Replace this use of System.out or System.err by a logger.(ñÊè8óÈ«ß»0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ïÿ½‚8óÈ«ß»0
+V	java:S106€"9Replace this use of System.out or System.err by a logger.(ïÿ½‚8óÈ«ß»0
+V	java:S106"9Replace this use of System.out or System.err by a logger.(ïÿ½‚8ôÈ«ß»0
+[	java:S106‚"9Replace this use of System.out or System.err by a logger.(ÃÑ˜²ûÿÿÿÿ8ôÈ«ß»0
+V	java:S106„"9Replace this use of System.out or System.err by a logger.(¹·à€8õÈ«ß»0
