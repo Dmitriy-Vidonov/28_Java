@@ -1,14 +1,0 @@
-
-1
-java:S3626"Remove this redundant jump.(ÉŠ©ƒ
-A
-java:S1905"&Remove this unnecessary cast to "int".(à‚µÄúÿÿÿÿ
-A
-java:S1905"&Remove this unnecessary cast to "int".(à‚µÄúÿÿÿÿ
-<
-java:S1905"&Remove this unnecessary cast to "int".(¦ƒ»®
-<
-java:S1905"&Remove this unnecessary cast to "int".(¦ƒ»®
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Çà–úÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Êþèóýÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Žµ÷
