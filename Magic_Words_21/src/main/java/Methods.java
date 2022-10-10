@@ -1,12 +1,4 @@
-public class Test {
-    public static void main(String[] args) {
-        String[] strArray = {"нклм", "нмкл", "нлмк" };
-       for(int i=1; i<strArray.length; i++) {
-           int comp = compareStrings(strArray[0], strArray[i]);
-           getComparisonResult(comp, strArray[0], strArray[i]);
-       }
-    }
-
+public class Methods {
     public static int compareStrings(String s1, String s2) {
 
         for (int i = 0; i < s1.length() && i < s2.length(); i++) {
