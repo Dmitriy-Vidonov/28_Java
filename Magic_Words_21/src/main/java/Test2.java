@@ -8,7 +8,7 @@ public class Test2 {
         System.out.println("л = " + (int)str.charAt(2));
         System.out.println("м = " + (int)str.charAt(3));
 
-        String strReplace = "нкмл";
+        String strReplace = "вкиб";
         char temp;
         String bufferStr = ""; //буферная строка, для хранения промежуточных значений
         ArrayList<String> bufferArray = new ArrayList<String>(); //массив, в который будем заносить полученные перестановки
@@ -36,16 +36,25 @@ public class Test2 {
             else continue;
         }
         //теперь в массиве biggerArr надо найти наименьшее лексикографически слово
-        String lessWord = biggerArr.get(0);
+        String lessWord = "";
+        if(biggerArr.size() > 0) lessWord = biggerArr.get(0);
         for(int i=0; i<biggerArr.size(); i++) {
-            if(Methods.compareStrings()) {
-
+            if(Methods.compareStrings(biggerArr.get(i), lessWord) < 0) {
+                lessWord = biggerArr.get(i);
             }
         }
+        System.out.println("Наименьшее лексикографическое слово в biggerArr = " + lessWord);
+
+        //Сравнить наименьшее лексикографическое с исходным словом. Больше ли новое слово чем начальное?
+        if(Methods.compareStrings(lessWord, strReplace) > 0) System.out.println("слово " + lessWord
+                + " - магическое!");
+        else System.out.println("магического слова нет");
 
         //тестовый вывод полученного буферного массива
         for(String word : bufferArray) System.out.print(word + " ");
         System.out.println();
         for(String word : biggerArr) System.out.print(word + " "); //нмкл нлмк
+        System.out.println();
+
     }
 }
