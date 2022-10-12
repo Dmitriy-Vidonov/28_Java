@@ -1,0 +1,54 @@
+
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‹¾Â
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÅÈ›şÿÿÿÿ
+{
+java:S2293Z"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÅÈ›şÿÿÿÿ8Òë·ë¼0
+v
+java:S2293a"YReplace the type specification in this constructor call with the diamond operator ("<>").(¦Ğâå8Óë·ë¼0
+’
+java:S1319Y"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÄÒˆÀşÿÿÿÿ8Õë·ë¼0
+‰
+java:S1319Y"gThe type of "arrList" should be an interface such as "List" rather than the implementation "ArrayList".(ÄÒˆÀşÿÿÿÿ8Öë·ë¼0
+Œ
+java:S1319a"oThe type of "mainBufferArray" should be an interface such as "List" rather than the implementation "ArrayList".(¦Ğâå8×ë·ë¼0
+x
+java:S1104a"[Make mainBufferArray a static final constant or non-public and provide accessors if needed.(¦Ğâå8Ùë·ë¼0
+x
+java:S1104b"VMake strReplace a static final constant or non-public and provide accessors if needed.(Ê‚ñÍøÿÿÿÿ8Üë·ë¼0
+R
+java:S1444a"5Make this "public static mainBufferArray" field final(¦Ğâå8Şë·ë¼0
+R
+java:S1444b"0Make this "public static strReplace" field final(Ê‚ñÍøÿÿÿÿ8ßë·ë¼0
+:
+java:S2386a"Make this member "protected".(¦Ğâå8ìø·ë¼0
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ8°²„Ä¼0
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¯Ó°øÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ğ¯Ó°øÿÿÿÿ
+S
+java:S1854"8Remove this useless assignment to local variable "temp".(›œ×Íûÿÿÿÿ
+6
+java:S3626"Remove this redundant jump.(ÏÀ øÿÿÿÿ
+T
+java:S1155"">Use isEmpty() to check whether the collection is empty or not.(¥äâÒ
+1
+java:S36267"Remove this redundant jump.(ÉŠ©ƒ
+A
+java:S19056"&Remove this unnecessary cast to "int".(à‚µÄúÿÿÿÿ
+A
+java:S19056"&Remove this unnecessary cast to "int".(à‚µÄúÿÿÿÿ
+<
+java:S19059"&Remove this unnecessary cast to "int".(¦ƒ»®
+<
+java:S19059"&Remove this unnecessary cast to "int".(¦ƒ»®
+o	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú£¨“úÿÿÿÿ8Ìù·ë¼0
+Z
+java:S1854M"8Remove this useless assignment to local variable "temp".(Øõ„Àûÿÿÿÿ8Îù·ë¼0
+=
+java:S3626K"Remove this redundant jump.(ÏÀ øÿÿÿÿ8Ğù·ë¼0
+o	java:S100Y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÒˆÀşÿÿÿÿ8ßù·ë¼0
+6
+java:S3626]"Remove this redundant jump.(œœâ¥ûÿÿÿÿ

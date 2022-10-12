@@ -9,7 +9,7 @@ public class Test2 {
         System.out.println("л = " + (int)str.charAt(2));
         System.out.println("м = " + (int)str.charAt(3));
 
-        String strReplace = "ckib";
+        String strReplace = "крыжополь";
         char temp;
         String bufferStr = ""; //буферная строка, для хранения промежуточных значений
         ArrayList<String> bufferArray = new ArrayList<String>(); //массив, в который будем заносить полученные перестановки
