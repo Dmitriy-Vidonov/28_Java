@@ -1,4 +1,40 @@
+import java.util.ArrayList;
+
 public class Methods {
+    public static ArrayList<String> mainBufferArray = new ArrayList<String>();
+
+    //метод для перестановки букв в массиве
+    public static void LetterReplace(String str) {
+        char temp;
+        String bufferStr = "";
+        for(int i=0; i<str.length(); i++) { //основной цикл по каждой букве
+            for(int j=0; j<str.length(); j++) { //в этом цикле будем сдвигать буквы
+                if (i == j) continue;
+                else {
+                    temp = str.charAt(j);
+                    char[] tempArr = str.toCharArray();
+                    temp = tempArr[j];//к
+                    tempArr[j] = tempArr[i];
+                    tempArr[i] = temp;
+                    bufferStr = String.valueOf(tempArr);
+                    if(!mainBufferArray.contains(bufferStr)) mainBufferArray.add(bufferStr);
+                }
+            }
+        }
+    }
+
+    //метод заполнения массива biggerArr
+    public static ArrayList<String> BiggerArrComplete(ArrayList<String> arrList, String strReplace) {
+        ArrayList<String> biggerArr = new ArrayList<String>();
+        for(int i=0; i<arrList.size(); i++) {
+            //в массив biggerArr заносим только те слова, которые лексикографически больше исходного
+            if(Methods.compareStrings(arrList.get(i), strReplace) > 0) biggerArr
+                    .add(arrList.get(i));
+            else continue;
+        }
+        return biggerArr;
+    }
+
     public static int compareStrings(String s1, String s2) {
 
         for (int i = 0; i < s1.length() && i < s2.length(); i++) {
