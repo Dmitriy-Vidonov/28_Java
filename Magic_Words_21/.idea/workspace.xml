@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cec2944-d0a8-4d14-b79f-c95b3e71d303" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/194da825b579a9f3c5af0bb5cda51290cd486087" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e19d311c1fb9210ab34c145963a617685f85e36c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f5904f6d4ac127cbd673aea301c76c2f5b9b576b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Methods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test2.class" afterDir="false" />

@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Test2 {
+    public static String strReplace;
     public static void main(String[] args) {
         String str = "abлм";
         System.out.println("a = " + (int)str.charAt(0));
@@ -8,7 +9,7 @@ public class Test2 {
         System.out.println("л = " + (int)str.charAt(2));
         System.out.println("м = " + (int)str.charAt(3));
 
-        String strReplace = "вибк";
+        String strReplace = "ckib";
         char temp;
         String bufferStr = ""; //буферная строка, для хранения промежуточных значений
         ArrayList<String> bufferArray = new ArrayList<String>(); //массив, в который будем заносить полученные перестановки

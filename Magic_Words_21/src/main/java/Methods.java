@@ -8,6 +8,7 @@ public class Methods {
         char temp;
         String bufferStr = "";
         for(int i=0; i<str.length(); i++) { //основной цикл по каждой букве
+            mainBufferArray.add(str);
             for(int j=0; j<str.length(); j++) { //в этом цикле будем сдвигать буквы
                 if (i == j) continue;
                 else {
@@ -17,7 +18,7 @@ public class Methods {
                     tempArr[j] = tempArr[i];
                     tempArr[i] = temp;
                     bufferStr = String.valueOf(tempArr);
-                    if(!mainBufferArray.contains(bufferStr)) mainBufferArray.add(bufferStr);
+                    if(!mainBufferArray.contains(bufferStr) && !mainBufferArray.contains(Test2.strReplace)) mainBufferArray.add(bufferStr);
                 }
             }
         }
