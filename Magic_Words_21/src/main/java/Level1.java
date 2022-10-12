@@ -38,9 +38,14 @@ public class Level1 {
             }
         }
 
-        if(compareStrings(lessWord, input) > 0) return lessWord;
-        else return "";
+        bufferArray.clear();
+        mainBufferArray.clear();
+        strReplace = "";
 
+        if(compareStrings(lessWord, input) > 0) return lessWord;
+        else {
+            return "";
+        }
     }
 
     public static int compareStrings(String s1, String s2) {
@@ -75,8 +80,7 @@ public class Level1 {
                     tempArr[j] = tempArr[i];
                     tempArr[i] = temp;
                     bufferStr = String.valueOf(tempArr);
-                    if(!mainBufferArray.contains(bufferStr)
-                            && !mainBufferArray.contains(strReplace)) mainBufferArray.add(bufferStr);
+                    if(!mainBufferArray.contains(bufferStr) && !mainBufferArray.contains(strReplace)) mainBufferArray.add(bufferStr);
                 }
             }
         }
@@ -85,8 +89,7 @@ public class Level1 {
     public static ArrayList<String> BiggerArrComplete(ArrayList<String> arrList, String strReplace) {
         ArrayList<String> biggerArr = new ArrayList<String>();
         for(int i=0; i<arrList.size(); i++) {
-            if(compareStrings(arrList.get(i), strReplace) > 0) biggerArr
-                    .add(arrList.get(i));
+            if(compareStrings(arrList.get(i), strReplace) > 0) biggerArr.add(arrList.get(i));
             else continue;
         }
         return biggerArr;
