@@ -5,6 +5,7 @@ public class Level1 {
         char temp;
         String bufferStr = "";
         ArrayList<String> bufferArray = new ArrayList<String>();
+
         for(int i=0; i<input.length(); i++) {
             for(int j=0; j<input.length(); j++) {
                 if (i == j) continue;
@@ -21,11 +22,13 @@ public class Level1 {
             }
         }
 
-        ArrayList<String> biggerArr = new ArrayList<String>();
-        for(int i=0; i<bufferArray.size(); i++) {
-            if(compareStrings(bufferArray.get(i), input) > 0) biggerArr.add(bufferArray.get(i));
-            else continue;
+        for(int i=0; i < bufferArray.size(); i++) {
+            LetterReplace(bufferArray.get(i));
         }
+
+        ArrayList<String> biggerArr = new ArrayList<String>();
+        if(input.length() == 2) biggerArr.addAll(BiggerArrComplete(bufferArray, input));
+        else biggerArr.addAll(BiggerArrComplete(mainBufferArray, input));
 
         String lessWord = "";
         if(biggerArr.size() > 0) lessWord = biggerArr.get(0);
@@ -37,6 +40,7 @@ public class Level1 {
 
         if(compareStrings(lessWord, input) > 0) return lessWord;
         else return "";
+
     }
 
     public static int compareStrings(String s1, String s2) {
@@ -56,4 +60,37 @@ public class Level1 {
             return 0;
         }
     }
+
+    public static void LetterReplace(String str) {
+        char temp;
+        String bufferStr = "";
+        for(int i=0; i<str.length(); i++) {
+            mainBufferArray.add(str);
+            for(int j=0; j<str.length(); j++) {
+                if (i == j) continue;
+                else {
+                    temp = str.charAt(j);
+                    char[] tempArr = str.toCharArray();
+                    temp = tempArr[j];
+                    tempArr[j] = tempArr[i];
+                    tempArr[i] = temp;
+                    bufferStr = String.valueOf(tempArr);
+                    if(!mainBufferArray.contains(bufferStr)
+                            && !mainBufferArray.contains(Test2.strReplace)) mainBufferArray.add(bufferStr);
+                }
+            }
+        }
+    }
+
+    public static ArrayList<String> BiggerArrComplete(ArrayList<String> arrList, String strReplace) {
+        ArrayList<String> biggerArr = new ArrayList<String>();
+        for(int i=0; i<arrList.size(); i++) {
+            if(compareStrings(arrList.get(i), strReplace) > 0) biggerArr
+                    .add(arrList.get(i));
+            else continue;
+        }
+        return biggerArr;
+    }
+
+    public static ArrayList<String> mainBufferArray = new ArrayList<String>();
 }
