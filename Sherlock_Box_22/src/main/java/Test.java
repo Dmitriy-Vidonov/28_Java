@@ -18,9 +18,7 @@ public class Test {
         for(char word : strArray) {
             int buff_count = 0;
             for(int i = 0; i < str.length(); i++) {
-                if(str.charAt(i) == word) {
-                    buff_count++;
-                } else continue;
+                if(str.charAt(i) == word) buff_count++;
             }
             nums.add(buff_count);
         }
@@ -36,7 +34,6 @@ public class Test {
         for(int digit : nums) {
             if(digit == minEl) minCount++;
             else if (digit == maxEl) maxCount++;
-            else continue;
         }
         System.out.println("число максимальных = " + maxCount);
         System.out.println("число минимальных = " + minCount);

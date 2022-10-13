@@ -30,8 +30,6 @@ public class Level1 {
             else if (digit == maxEl) maxCount++;
         }
 
-        if((maxCount > 0 && (((maxEl - minEl) == 1) && (maxCount == 1 || minCount == 1))) || maxCount == 0) {
-            return true;
-        } else return false;
+        return ((maxCount > 0 && (((maxEl - minEl) == 1) && (maxCount == 1 || minCount == 1))) || maxCount == 0);
     }
 }
