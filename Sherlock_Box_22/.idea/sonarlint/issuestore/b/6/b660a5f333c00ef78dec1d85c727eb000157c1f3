@@ -1,0 +1,13 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½‡öÂüÿÿÿÿ
+Œ
+java:S2681"qThis statement will not be executed in a loop; only the first statement will be. The rest will execute only once.(¨³®Üıÿÿÿÿ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Çµí‘
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿ“…şÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¨³®Üıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¨³®Üıÿÿÿÿ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(­È›
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(¿ÍŞ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(äè©ıÿÿÿÿ
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(¢»Áøÿÿÿÿ
