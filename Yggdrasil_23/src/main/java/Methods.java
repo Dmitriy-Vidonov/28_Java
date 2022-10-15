@@ -18,19 +18,6 @@ public class Methods {
         }
     }
 
-    //Проверяем, нет ли в массиве чисел >= 3
-    public static boolean IsThreeOrGreater(int[][] array) {
-        boolean res = false;
-        mainloop: for(int i=0; i<array.length; i++) {
-            for(int j=0; j<array[0].length; j++) {
-                if(array[i][j] >= 3) {
-                    res = true;
-                    break mainloop;
-                }
-            }
-        }
-        return res;
-    }
     //Метод нацеливания на уничтожение
     public static void AimingForDestroy(int[][] arrayAim) {
         for(int i=0; i<arrayAim.length; i++) {
