@@ -12,7 +12,7 @@ public class Test {
        //склеить массив в одну строку, а потом ее распарсить
        String commonStr = "";
        for(int i=0; i<H; i++) commonStr+=tree[i];
-       System.out.println("commonStr = " + commonStr);
+       //System.out.println("commonStr = " + commonStr);
 
        int[][] intArray = new int[H][W];
        int label=0;
@@ -22,12 +22,22 @@ public class Test {
                label++;
            }
        }
+       System.out.println("Начальное состояние массива:");
+       Methods.ShowArray(intArray); //начальное состояние
+       System.out.println(); System.out.println();
 
-       for(int i=0; i<H; i++) {
-           System.out.println();
-           for(int j=0; j<W; j++) {
-               System.out.print(intArray[i][j]);
-           }
-       }
+       Methods.Growth(intArray); //обычный рост ветвей на 1 год
+       System.out.println("Первый год роста");
+       Methods.ShowArray(intArray);
+       System.out.println(); System.out.println();
+
+       System.out.println("Второй год роста");
+       Methods.Growth(intArray);
+       Methods.ShowArray(intArray); System.out.println();
+
+       //метод уничтожения соседних веток - так же оформить отдельно
+       Methods.AimingForDestroy(intArray);
+       
+       Methods.ShowArray(intArray);
     }
 }
