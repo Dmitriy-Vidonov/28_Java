@@ -25,5 +25,11 @@ public class Test {
            }
        }
        Methods.ShowArray(intArray);
+       System.out.println();
+
+       //Преобразовать полученный массив в массив строк с . и +
+       String[] resultStrArray = Methods.intArrayToDotsNPlusesStringArray(intArray);
+
+       for (String word : resultStrArray) System.out.print(word + " ");
     }
 }
