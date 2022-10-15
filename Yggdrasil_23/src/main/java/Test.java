@@ -15,7 +15,7 @@ public class Test {
 
        int[][] intArray = Methods.StrToIntArray(commonStr, H, W);
 
-       int N = 4;
+       int N = 12;
        for(int i=1; i<=N; i++) {
            if(i % 2 != 0) {
                Methods.Growth(intArray);
@@ -33,3 +33,11 @@ public class Test {
        for (String word : resultStrArray) System.out.print(word + " ");
     }
 }
+/*
+ //testing
+    public static void main(String[] args) {
+        String[] tree = {".+..", "..+." , ".+.."};
+        String[] array = TreeOfLife(3,4, 12, tree);
+        for (String words : array) System.out.print(words + " ");
+    }
+ */

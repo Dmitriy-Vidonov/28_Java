@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ddb1e97-bcb8-4e40-bb9d-89263445305e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Methods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Level1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Methods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +42,14 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Level1">
+    <configuration name="Level1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Level1" />
+      <module name="Yggdrasil_23" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Yggdrasil_23" />
@@ -55,6 +59,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Level1" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
