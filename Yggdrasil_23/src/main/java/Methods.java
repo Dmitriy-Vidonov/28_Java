@@ -56,4 +56,17 @@ public class Methods {
         }
         array[i][j] = 0;
     }
+
+    //Преобразование строки в числовой массив
+    public static int[][] StrToIntArray(String str, int H, int W) {
+        int[][] intArray = new int[H][W]; //преобразование строки в числовой массив
+        int label=0;
+        for(int i=0; i<H; i++) {
+            for(int j=0; j<W; j++) {
+                intArray[i][j] = (str.charAt(label)) - '0';
+                label++;
+            }
+        }
+        return intArray;
+    }
 }

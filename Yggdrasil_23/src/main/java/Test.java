@@ -11,33 +11,19 @@ public class Test {
 
        //склеить массив в одну строку, а потом ее распарсить
        String commonStr = "";
-       for(int i=0; i<H; i++) commonStr+=tree[i];
-       //System.out.println("commonStr = " + commonStr);
+       for(int i=0; i<H; i++) commonStr+=tree[i]; //строковый массив преобразовали в строку
 
-       int[][] intArray = new int[H][W];
-       int label=0;
-       for(int i=0; i<H; i++) {
-           for(int j=0; j<W; j++) {
-               intArray[i][j] = (commonStr.charAt(label)) - '0';
-               label++;
+       int[][] intArray = Methods.StrToIntArray(commonStr, H, W);
+
+       int N = 4;
+       for(int i=1; i<=N; i++) {
+           if(i % 2 != 0) {
+               Methods.Growth(intArray);
+           } else {
+               Methods.Growth(intArray);
+               Methods.AimingForDestroy(intArray);
            }
        }
-       System.out.println("Начальное состояние массива:");
-       Methods.ShowArray(intArray); //начальное состояние
-       System.out.println(); System.out.println();
-
-       Methods.Growth(intArray); //обычный рост ветвей на 1 год
-       System.out.println("Первый год роста");
-       Methods.ShowArray(intArray);
-       System.out.println(); System.out.println();
-
-       System.out.println("Второй год роста");
-       Methods.Growth(intArray);
-       Methods.ShowArray(intArray); System.out.println();
-
-       //метод уничтожения соседних веток - так же оформить отдельно
-       Methods.AimingForDestroy(intArray);
-       
        Methods.ShowArray(intArray);
     }
 }
