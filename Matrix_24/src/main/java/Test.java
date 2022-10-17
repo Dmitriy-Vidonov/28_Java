@@ -71,3 +71,14 @@ public class Test {
         for(String word : Matrix) System.out.print(word + " "); System.out.println();
     }
 }
+/*
+    //Testing
+    public static void main(String[] args) {
+        String[] Matrix = {"123456", "234567", "345678", "456789"};
+        int M = 4; //число строк
+        int N = 6; //длина строк
+        int T = 2; //число шагов поворота
+        MatrixTurn(Matrix, 4,6, 1);
+        for (String word : Matrix) System.out.print(word + " ");
+    }
+*/
