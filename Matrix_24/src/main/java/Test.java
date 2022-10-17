@@ -56,7 +56,18 @@ public class Test {
                 left++;
             }
         }
-        
         Methods.ShowArray(intArray); //вывод в консоль содержимого массива
+
+        //Поместить полученный массив в исходный массив строк
+        String buffer = "";
+        for(int i=0; i<M; i++) {
+            buffer = "";
+            for(int j=0; j<N; j++) {
+                buffer += String.valueOf(intArray[i][j]);
+            }
+            Matrix[i] = buffer;
+        }
+        System.out.println();
+        for(String word : Matrix) System.out.print(word + " "); System.out.println();
     }
 }
