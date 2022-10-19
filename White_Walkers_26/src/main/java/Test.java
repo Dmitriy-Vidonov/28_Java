@@ -55,10 +55,13 @@ public class Test {
 
         for(int nums : pairs) System.out.print(nums + " "); System.out.println();
         for(int nums : equals) System.out.print(nums + " "); System.out.println();
-
-        //проанализировать 2 списка - в одном все пары должны быть по 10
-        //в другом должны быть только 3-ки
-        List<Integer> listTest = new ArrayList<>();
-        System.out.println("размер нулевого списка = " + listTest.size());
     }
 }
+/*
+   //testing
+    public static void main(String[] args) {
+        String[] villages = {"axxb6===4xaf5===eee5", "5==ooooooo=5=5",
+                "abc=7==hdjs=3gg1=======5", "aaS=8", "9===1===9===1===9"};
+        for(String village : villages) System.out.println(white_walkers(village));
+    }
+*/
