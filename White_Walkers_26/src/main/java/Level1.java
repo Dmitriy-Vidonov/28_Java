@@ -43,7 +43,7 @@ public class Level1 {
 
     public static int EqualsCount(String str, int startIndex, int endIndex) {
         int res = 0;
-        for(int i=startIndex; i<endIndex; i++) if(str.charAt(i) == '=') res++;
+        for(int i=startIndex; i<endIndex; i++) if (str.charAt(i) == '=') res++;
         return res;
     }
 
