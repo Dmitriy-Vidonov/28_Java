@@ -12,5 +12,6 @@ public class Test {
         for (int num : resArray) sum += num;
         if(sum % 2 == 0) System.out.println("true");
         else System.out.println("false");
+
     }
 }
