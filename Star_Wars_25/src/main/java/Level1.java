@@ -2,9 +2,9 @@ import java.util.*;
 
 public class Level1 {
     public static boolean TransformTransform(int[] A, int N) {
-        int[] array = Methods.Transform(A, N);
+        int[] array = Transform(A, N);
         int len = array.length;
-        int[] resArray = Methods.Transform(array, len);
+        int[] resArray = Transform(array, len);
 
         int sum = 0;
         for (int num : resArray) sum += num;
