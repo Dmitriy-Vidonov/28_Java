@@ -1,0 +1,29 @@
+
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ8äÌ™¿0
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÞÉÑ
+U
+java:S1854"?Remove this useless assignment to local variable "equalsCount".(Ïèÿá
+^
+java:S1659"CDeclare "endNum" and all following declarations on a separate line.(³·–Éùÿÿÿÿ
+F
+java:S1659	"+Declare "endNumInstall" on a separate line.(¶¶¡ÿþÿÿÿÿ
+b
+java:S1659"GDeclare "startIndex" and all following declarations on a separate line.(¶‹þ¬þÿÿÿÿ
+K
+java:S1481"0Remove this unused "equalsCount" local variable.(¶‹þ¬þÿÿÿÿ
+=
+java:S1125"'Remove the unnecessary boolean literal.(ããØ£
+=
+java:S1125"'Remove the unnecessary boolean literal.(ããØ£
+=
+java:S1125"'Remove the unnecessary boolean literal.(Ìóà
+=
+java:S1125"'Remove the unnecessary boolean literal.(Ìóà
+B
+java:S1125"'Remove the unnecessary boolean literal.(ñ†ýóýÿÿÿÿ
+B
+java:S1125"'Remove the unnecessary boolean literal.(ñ†ýóýÿÿÿÿ
+Y
+java:S1155)">Use isEmpty() to check whether the collection is empty or not.(Í§±Äþÿÿÿÿ
+c	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒçÂÁ
