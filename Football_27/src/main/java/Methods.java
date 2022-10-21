@@ -23,11 +23,10 @@ public class Methods {
 
     //1-й метод перестановки
     public static boolean theFirstMethod(List<Integer> firstList) {
-        boolean result = false;
         int listSize = firstList.size();
         int buffer, firstIndex, secondIndex;
         buffer = firstIndex = secondIndex = 0;
-        //здесь вернее взять индекс чиала, а не само его число, так будет проще с ними оперировать в дальнейшем
+        //здесь вернее взять индекс числа, а не само его число, так будет проще с ними оперировать в дальнейшем
         for (int i=0; i<listSize; i++) {
             if (firstList.get(i) == Collections.max(firstList) && i != listSize - 1) { //частный случай, если max не в конце
                 buffer = firstList.get(listSize - 1); //в буфер поместили последний элемент
@@ -48,16 +47,58 @@ public class Methods {
         return isListSorted(firstList);
     }
 
+    //2-й метод перестановки //переписать по аналогии с первым методом, где мы рассматриваем частный случай
+    //а потом следим за границами индекса i
+    public static boolean theSecondMethod(List<Integer> secondList) {
+        int listSize = secondList.size();
+        int startIndex, endIndex;
+        startIndex = endIndex = 0;
+        boolean startIndexInstalled = false;
+        boolean endIndexInstalled = false;
+
+        //если список не
+
+        for (int i = 1; i < listSize - 1; i++) {
+            //если последующий элемент при проходе списка больше предыдущего
+            if (secondList.get(i) < secondList.get(i-1) && startIndexInstalled == false && endIndexInstalled == false) {
+                startIndex = i-1;
+                startIndexInstalled = true;
+                //здесь надо проверять и предыдущий и последующий элементы, иначе у нас на следующем элементе все условия ок
+            } else if (secondList.get(i) < secondList.get(i+1) && startIndexInstalled == true && endIndexInstalled == false) {
+                endIndex = i;
+                endIndexInstalled = true;
+            }
+        }
+
+        //вынести полученное подмножество по координатам - в отдельный список
+        List<Integer> bufferList = new ArrayList<>();
+        for (int count = startIndex; count <= endIndex; count++) {
+            bufferList.add(secondList.get(count));
+        }
+        Collections.reverse(bufferList); //инвертируем полученный список
+
+        //Инвертированное подмножество влепить в исходный массив
+        int buffercount = 0;
+        for (int i = startIndex; i <= endIndex; i++) {
+            secondList.set(i, bufferList.get(buffercount));
+            buffercount++;
+        }
+
+        return isListSorted(secondList);
+    }
+
     //Testing
     public static void main(String[] args) {
-        int[] arrTest = {1, 7, 5, 3, 9};
+        int[] arrTest = {3, 2, 1};
         List<Integer> arrList = new ArrayList<>();
         for(int nums : arrTest) arrList.add(nums);
-        boolean firstMethod = false;
-        firstMethod = theFirstMethod(arrList);
+       // boolean firstMethod = false;
+       // firstMethod = theFirstMethod(arrList);
+        boolean secondMethod = false;
+        secondMethod = theSecondMethod(arrList);
 
         Show(arrList);
-        System.out.println("первый метод - " + firstMethod);
+        System.out.println("второй метод - " + secondMethod);
 
     }
 }
