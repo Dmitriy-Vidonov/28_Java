@@ -32,6 +32,7 @@ public class Methods {
                 buffer = firstList.get(listSize - 1); //в буфер поместили последний элемент
                 firstList.set(listSize - 1, firstList.get(i)); //в последний элемент поместили значение из буфера
                 firstList.set(i, buffer); //максимальный элемент на последний
+                break;
                 //ищем первое число, которое меньше и своего предшественника и своего последователя
             } else if ((i >= 1 && i < listSize - 1) && firstList.get(i) < firstList.get(i-1)
                     && firstList.get(i) < firstList.get(i+1)) {
@@ -56,49 +57,50 @@ public class Methods {
         boolean startIndexInstalled = false;
         boolean endIndexInstalled = false;
 
-        //если список не
+        List<Integer> tmpList = new ArrayList<>(secondList);
+        Collections.reverse(tmpList);
 
-        for (int i = 1; i < listSize - 1; i++) {
-            //если последующий элемент при проходе списка больше предыдущего
-            if (secondList.get(i) < secondList.get(i-1) && startIndexInstalled == false && endIndexInstalled == false) {
-                startIndex = i-1;
-                startIndexInstalled = true;
-                //здесь надо проверять и предыдущий и последующий элементы, иначе у нас на следующем элементе все условия ок
-            } else if (secondList.get(i) < secondList.get(i+1) && startIndexInstalled == true && endIndexInstalled == false) {
-                endIndex = i;
-                endIndexInstalled = true;
+        if (isListSorted(tmpList)) {
+            Collections.sort(secondList);
+        } else {
+            for (int i = 1; i < listSize - 1; i++) {
+                if (secondList.get(i) < secondList.get(i-1) && startIndexInstalled == false && endIndexInstalled == false) {
+                    startIndex = i-1;
+                    startIndexInstalled = true;
+                } else if (secondList.get(i) < secondList.get(i+1) && startIndexInstalled == true && endIndexInstalled == false) {
+                    endIndex = i;
+                    endIndexInstalled = true;
+                }
+            }
+
+            List<Integer> bufferList = new ArrayList<>();
+            for (int count = startIndex; count <= endIndex; count++) {
+                bufferList.add(secondList.get(count));
+            }
+            Collections.reverse(bufferList);
+
+            int buffercount = 0;
+            for (int i = startIndex; i <= endIndex; i++) {
+                secondList.set(i, bufferList.get(buffercount));
+                buffercount++;
             }
         }
-
-        //вынести полученное подмножество по координатам - в отдельный список
-        List<Integer> bufferList = new ArrayList<>();
-        for (int count = startIndex; count <= endIndex; count++) {
-            bufferList.add(secondList.get(count));
-        }
-        Collections.reverse(bufferList); //инвертируем полученный список
-
-        //Инвертированное подмножество влепить в исходный массив
-        int buffercount = 0;
-        for (int i = startIndex; i <= endIndex; i++) {
-            secondList.set(i, bufferList.get(buffercount));
-            buffercount++;
-        }
-
         return isListSorted(secondList);
     }
 
     //Testing
     public static void main(String[] args) {
-        int[] arrTest = {3, 2, 1};
+        int[] arrTest = {9, 5, 3, 7, 1};
         List<Integer> arrList = new ArrayList<>();
         for(int nums : arrTest) arrList.add(nums);
-       // boolean firstMethod = false;
-       // firstMethod = theFirstMethod(arrList);
-        boolean secondMethod = false;
-        secondMethod = theSecondMethod(arrList);
+        boolean firstMethod = false;
+        firstMethod = theFirstMethod(arrList);
+       // boolean secondMethod = false;
+       // secondMethod = theSecondMethod(arrList);
 
         Show(arrList);
-        System.out.println("второй метод - " + secondMethod);
+      //  System.out.println("второй метод - " + secondMethod);
+        System.out.println("первый метод - " + firstMethod);
 
     }
 }
