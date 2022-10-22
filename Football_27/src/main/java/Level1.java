@@ -4,10 +4,11 @@ public class Level1 {
         List<Integer> arrList = new ArrayList<>();
         for(int nums : F) arrList.add(nums);
         boolean result = false;
+        List<Integer> tmpList = new ArrayList<>(arrList);
 
-        if (theFirstMethod(arrList)) {
+        if (theFirstMethod(arrList) && isListSorted(tmpList) == false) {
             result = true;
-        } else if (theSecondMethod(arrList)) {
+        } else if (theSecondMethod(arrList) && isListSorted(tmpList) == false) {
             result = true;
         } else {
             result = false;
