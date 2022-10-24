@@ -61,8 +61,4 @@ public class Level1 {
     public static void Step3(boolean[] array) {
         for (int i = 0; i < array.length; i++) if ((i + 1) % 3 == 0) Change(array, i);
     }
-    //testing
-    public static void main(String[] args) {
-        System.out.println(Keymaker(4));
-    }
 }
