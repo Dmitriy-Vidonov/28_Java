@@ -1,0 +1,37 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(ŠÒ·²üÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(ŠÒ·²üÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ž¶šùÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ž¶šùÿÿÿÿ
+y
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "sorted".(¬ ˆÚýÿÿÿÿ
+R
+java:S4973&"<Strings and Boxed types should be compared using "equals()".(â•›“
+R
+java:S2589G"7Remove this expression which always evaluates to "true"(Š³¹©ùÿÿÿÿ
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ8šù„ö¿0
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ž¶šùÿÿÿÿ
+C
+java:S1172"(Remove this unused method parameter "N".(¡ž¶šùÿÿÿÿ
+B
+java:S1125	"'Remove the unnecessary boolean literal.(÷ÝÞËùÿÿÿÿ
+B
+java:S1125"'Remove the unnecessary boolean literal.(½íüÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«¶¦øýÿÿÿÿ
+P
+java:S1854#":Remove this useless assignment to local variable "buffer".( “Ý§
+b
+java:S1659""GDeclare "firstIndex" and all following declarations on a separate line.(®‹ðÁøÿÿÿÿ
+A
+java:S1659:"&Declare "endIndex" on a separate line.(‰œ“‚øÿÿÿÿ
+=
+java:S1125F"'Remove the unnecessary boolean literal.(Ž²ðç
+B
+java:S1125G"'Remove the unnecessary boolean literal.(Š³¹©ùÿÿÿÿ
+=
+java:S1125J"'Remove the unnecessary boolean literal.(êÃÅñ
+B
+java:S1125K"'Remove the unnecessary boolean literal.(Š³¹©ùÿÿÿÿ
