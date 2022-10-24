@@ -1,0 +1,19 @@
+
+D
+java:S1121".Extract the assignment out of this expression.(ÙÆí
+7
+java:S1643$"Use a StringBuilder instead.(€´Äÿÿÿÿÿ
+2
+java:S1643%"Use a StringBuilder instead.(´£Ôİ
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ØìŠüÿÿÿÿ8ïØÒÚÀ0
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îƒ¢
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÄÉøÿÿÿÿ
+<
+java:S1125"'Remove the unnecessary boolean literal.(¦Ò§L
+b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÂım
+c	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ĞÒ
+B
+java:S1125$"'Remove the unnecessary boolean literal.(€´Äÿÿÿÿÿ
+<
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ

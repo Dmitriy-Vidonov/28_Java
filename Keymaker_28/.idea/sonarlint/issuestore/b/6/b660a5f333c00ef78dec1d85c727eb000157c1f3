@@ -1,0 +1,15 @@
+
+g
+java:S1104"QMake pairs a static final constant or non-public and provide accessors if needed.(Ğæäˆ
+e
+java:S1104"OMake len a static final constant or non-public and provide accessors if needed.(ÓÆäÑ
+g
+java:S1104"QMake quart a static final constant or non-public and provide accessors if needed.(õ¿ƒ‘
+A
+java:S1444"+Make this "public static pairs" field final(Ğæäˆ
+?
+java:S1444")Make this "public static len" field final(ÓÆäÑ
+A
+java:S1444"+Make this "public static quart" field final(õ¿ƒ‘
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉŒÂùÿÿÿÿ
+U	java:S106"9Replace this use of System.out or System.err by a logger.(„ßÃ‹8Á„­­À0

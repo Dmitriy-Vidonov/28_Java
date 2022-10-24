@@ -1,0 +1,8 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(üíŠª
+‡
+java:S2681"qThis statement will not be executed in a loop; only the first statement will be. The rest will execute only once.(üßþ€
+h
+java:S1871"KThis branch's code block is the same as the block for the branch on line 8.(å¥ž‡8«Þ÷­À0
+N	java:S106"9Replace this use of System.out or System.err by a logger.(üßþ€
+N	java:S106"9Replace this use of System.out or System.err by a logger.(üßþ€
