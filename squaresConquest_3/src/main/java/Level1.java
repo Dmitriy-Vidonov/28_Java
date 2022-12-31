@@ -1,10 +1,6 @@
 public class Level1 {
-    public static int ConquestCampaign(int N, int M, int L, int[] battalion){
-        int days, countFull, ignFlag, mapSquare;
-        days = 0;
-        countFull = 0;
-        mapSquare = N*M;
-
+    public static int ConquestCampaign(int N, int M, int L, int[] battalion){ 
+        
         int[][] map = new int[N][M];
         for (int n = 0; n < N; n++) {
             for (int m = 0; m < M; m++) {
@@ -13,6 +9,7 @@ public class Level1 {
         }
 
         int count = 0;
+        int countFull = 0;
         for(int i=0; i<L; i++) {
             if(map[battalion[count]-1][battalion[count+1]-1] == 0) {
                 map[battalion[count]-1][battalion[count+1]-1] = 1;
@@ -20,10 +17,13 @@ public class Level1 {
             }
             count+=2;
         }
-        days++;
+        count = -1;
+        int days = 1;
 
-        if(countFull < mapSquare) {
-            while (countFull < mapSquare) {
+        int ignFlag;
+        final int MAP_SQUARE = N * M;
+        if(countFull < MAP_SQUARE) {
+            while (countFull < MAP_SQUARE) {
                 days++;
 
                 if(days % 2 == 0) {
