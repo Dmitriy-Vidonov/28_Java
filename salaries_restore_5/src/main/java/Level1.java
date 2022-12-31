@@ -35,6 +35,7 @@ public class Level1 {
             salary[indexF] = tempF;
 
         }
+        iteration = -1;
         return salary;
     }
     public static void bubbleSort(int[] arr){
