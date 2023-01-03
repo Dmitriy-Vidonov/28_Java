@@ -115,7 +115,5 @@ public class Test {
 
        String rasshifrStroka = Level1.TheRabbitsFoot(zashifrStroka, false);
        System.out.println("Расшифрованная строка - " + rasshifrStroka);
-
-       //Надо ебануть тест! Нагенерить строк и потом сравнивать их со значниями без пробелов
     }
 }
